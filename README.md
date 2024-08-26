@@ -11,6 +11,17 @@
 
 An jedem Tag treffen wir uns von 9--11 und 13--15 im virtuellen Kursraum, die Zugangsdaten werden per E-Mail versandt.
 
+## "Ground rules"
+
+* "You can say you to me"
+* Unterbrecht mich gern (nach ein Satz oder Absatz)
+* Bin ich zu schnell? Bitte melden...
+* Soll ich etwas wiederholen? Bitte melden...
+* Feedback geben: "Seid ihr alle da?" ===> "+"
+* 5 Minuten Pause in den einzelnen Blöcken
+* Ich weiß nicht alles, aber ich weiß wo ich nachschauen oder wen ich fragen kann
+
+
 ## Wie kommt man an die Materialien?
 
 git installieren und dann auf der Kommandozeile
@@ -51,6 +62,11 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
   * Tipps und Tricks
   * Definition von Einheiten bei Variablen
   * Formatierung von Gleichungen
+  * LaTeX-Probleme lösen, die sich nicht mit zwei Minuten Googeln erledigen lassen
+  * LaTeX-Korrekturfunktionen
+  * Standardwerk für typografische Fragen
+ 
+
 
 ### Tag 2
 
