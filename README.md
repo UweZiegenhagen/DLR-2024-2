@@ -40,11 +40,29 @@ bitte in ein privates Repository, da ich gern Wildwuchs verhindern möchte.
 
 Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
-### Tag 1 - Grundlagen
+### Tag 1
 
 * Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
-* Themen für die Termine
+* Themen für die Termine:
 
+  * LaTeX Präsentationen
+  * TikZ
+  * Python-LaTeX-Schnittstellen
+  * Tipps und Tricks
+  * Definition von Einheiten bei Variablen
+  * Formatierung von Gleichungen
+
+### Tag 2
+
+* 
+
+### Tag 3
+
+* 
+
+### Tag 4
+
+* 
 
 ## Literaturempfehlungen
 
