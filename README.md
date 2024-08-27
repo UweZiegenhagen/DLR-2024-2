@@ -86,7 +86,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
   * Floats im LaTeX
   * chemformula und \ch{CO2}
   * Schneller TeXen mit Tastaturkürzeln (Autohotkey)
-  
+  * TikZ - TikZ ist kein Zeichenprogramm
 
  
 
