@@ -86,8 +86,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
   * Floats im LaTeX
   * chemformula und \ch{CO2}
   * Schneller TeXen mit Tastaturkürzeln (Autohotkey)
-  * TikZ - TikZ ist kein Zeichenprogramm
-
+  * TikZ - TikZ ist kein Zeichenprogramm Teil 1
  
 
 
@@ -96,7 +95,8 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
   * TeXStudio konfigurieren
   * Mit LaTeX zitieren: thebibliography, bibtex, biblatex
   * Große Dokumente
-  * TikZ
+  * TikZ - TikZ ist kein Zeichenprogramm Teil 1
+  * Lualatex und Copy&Paste aus Word
 
 
 ### Tag 3

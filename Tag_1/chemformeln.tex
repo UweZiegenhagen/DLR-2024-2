@@ -1,0 +1,44 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{chemformula}
+\usepackage{xcolor}
+
+\newcommand{\cozwei}{CO\textsubscript{2}}
+
+\newcommand{\person}[1]{\textcolor{red}{\textsc{#1}}}
+
+\usepackage{chemfig}
+
+\begin{document}
+
+\cozwei
+
+\chemfig{H-C(-[2]H)(-[6]H)-H}\par
+
+\chemfig{H-C(-[:90]H)(-[:-90]H)-H}\par
+
+\chemfig{H-C(-[::90]H)(-[::-90]H)-H}\par
+
+
+\person{Albert Einstein}
+
+\ch{CO44} \par
+\ch{H2O} \par
+\ch{Sb2O3} \par
+\ch{H+} \par
+\ch{CrO4^2-} \par
+\ch{AgCl2-} \par
+\ch{[AgCl2]-} \par
+\ch{Y^{99}+} \par
+\ch{Y^{99+}} \par
+\ch{H2_{(aq)}} \par
+\ch{NO3-} \par
+\ch{(NH4)2S} \par
+\ch{^{227}_{90}Th+} \par
+$V_{\ch{H2O}}$ \par
+\ch{Ce^{IV}} \par
+\ch{KCr(SO4)2 * 12 H2O}
+
+\end{document}
