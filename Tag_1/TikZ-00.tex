@@ -27,8 +27,6 @@
 \blindtext
 
 
-\blindtext
-
 \begin{tikzpicture} % Achtung:_ kann leicht zum Haareraufen führen!
 \draw [step=1cm,blue,thin] (0,0) grid (15,10);
 \draw(1,1) -- ++(5,3) -- ++(-1,-1) ; % relative Koordinaten mit ++ mit Koordinatenupdate!
@@ -36,5 +34,14 @@
 \end{tikzpicture}
 
 \blindtext
+
+
+\begin{tikzpicture} 
+\draw [step=1cm,blue,thin] (0,0) grid (15,10);
+\draw[red,very thick] (5,5) -- ++(60:2)  -- ++(-60:2)  ;
+\end{tikzpicture}
+
+\blindtext
+
 
 \end{document}
