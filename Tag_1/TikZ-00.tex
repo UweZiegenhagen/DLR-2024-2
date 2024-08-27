@@ -8,14 +8,14 @@
 
 \blindtext
 
-\begin{tikzpicture}
-\draw [step=1cm,blue,thin] (0,0) grid (16,10);
+\begin{tikzpicture} % https://tex.stackexchange.com/questions/665641/labelling-the-points-in-the-grid
+\draw [step=1cm,blue,thin] (0,0) grid (15,10);
 
         \foreach \i in {0,1,...,15}{
-                \node[blue,right] at (\i,0) (\i) {\i};
+                \node[blue,below] at (\i,0) (\i) {\i};
             }
         \foreach \j in {0,1,...,10}{
-                \node[blue,right] at (0,\j) (\j) {\j};
+                \node[blue,left] at (0,\j) (\j) {\j};
             }
         
 
