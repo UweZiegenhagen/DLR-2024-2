@@ -1,6 +1,6 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
-\documentclass[12pt,ngerman]{scrartcl}
+\documentclass[12pt,ngerman,parskip=half]{scrartcl}
 
 \usepackage{graphicx}
 \usepackage{babel}
@@ -9,7 +9,13 @@
 
 \begin{document}
 
-\blindtext[2]
+\listoftables
+
+\listoffigures
+
+\blindtext[1]
+
+\blindtext[1]
 
 % Einfaches Einfügen von Bildern funktioniert auch ohne Float
 \includegraphics[width=\textwidth]{Bilder/Katze}
