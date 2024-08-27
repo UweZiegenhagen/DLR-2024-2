@@ -87,16 +87,18 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
   * chemformula und \ch{CO2}
   * Schneller TeXen mit Tastaturkürzeln (Autohotkey)
   * TikZ - TikZ ist kein Zeichenprogramm Teil 1
+  * Große Dokumente
  
 
 
 ### Tag 2
 
+  * Existierende Dokumente (aus Word) TeXen: Erfahrungen
   * TeXStudio konfigurieren
-  * Mit LaTeX zitieren: thebibliography, bibtex, biblatex
-  * Große Dokumente
-  * TikZ - TikZ ist kein Zeichenprogramm Teil 1
+  * Mit LaTeX zitieren: thebibliography, bibtex, biblatex/biber
+  * TikZ - TikZ ist kein Zeichenprogramm Teil 2
   * Lualatex und Copy&Paste aus Word
+  * show refs
 
 
 ### Tag 3
