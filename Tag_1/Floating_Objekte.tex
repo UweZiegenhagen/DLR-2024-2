@@ -1,0 +1,56 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{graphicx}
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage{float}
+
+\begin{document}
+
+\blindtext[2]
+
+% Einfaches Einfügen von Bildern funktioniert auch ohne Float
+\includegraphics[width=\textwidth]{Bilder/Katze}
+%\caption{Ich bin die Bildunterschrift}
+%! LaTeX Error: \caption outside float.
+
+\blindtext[2]
+
+\begin{figure}[h] % here
+\includegraphics[width=\textwidth]{Bilder/Katze}
+\caption{Ich bin die Bildunterschrift - h}
+\end{figure}
+
+\blindtext[2]
+
+\begin{figure}[t] % Seitenanfang
+\includegraphics[width=\textwidth]{Bilder/Katze}
+\caption{Ich bin die Bildunterschrift - t}
+\end{figure}
+
+\blindtext[2]
+
+
+\begin{figure}[h] % Seitenanfang
+\includegraphics[width=\textwidth]{Bilder/Katze}
+\caption{Ich bin die Bildunterschrift - b}
+\end{figure} 
+
+\blindtext[2]
+
+
+\begin{figure}[p] % Seitenanfang
+\includegraphics[width=\textwidth]{Bilder/Katze}
+\caption{Ich bin die Bildunterschrift - p}
+\end{figure}
+
+\blindtext[4]\vspace*{1em}
+
+
+\includegraphics[width=\textwidth]{Bilder/Katze}
+\captionof{figure}{Ich bin die Bildunterschrift - captionof}
+
+
+\end{document}

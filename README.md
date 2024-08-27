@@ -69,37 +69,43 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
   * Eigene Templates
   * Kompilierzeiten verringern
   * Mit LaTeX zitieren
-  * hyperref
   * Lualatex benutzen
-  * Schneller TeXen mit Tastaturkürzeln
-  * TeXStudio konfigurieren
+  * FloatBarrier
   * labels und refs
   * \centering 
 
 
 ### Tag 1
 
-* Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
-
-* Fehler finden in LaTeX Dokumenten am praktischen Beispiel
-* Eine eigene Vorlage
-* LaTeX Präsentationen, Step 1
-
+  * Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
+  * Fehler finden in LaTeX Dokumenten am praktischen Beispiel
+    - $ Zeichen in der Fehlermeldung: eventuell fehlt der mathematische Modus 
+  * Eine eigene Vorlage bauen
+  * hyperref (als letztes Paket laden)
+  * LaTeX Präsentationen, Step 1
+  * Floats im LaTeX
+  * chemformula und \ch{CO2}
+  * Schneller TeXen mit Tastaturkürzeln (Autohotkey)
+  
 
  
 
 
 ### Tag 2
 
-* 
+  * TeXStudio konfigurieren
+  * Mit LaTeX zitieren: thebibliography, bibtex, biblatex
+  * Große Dokumente
+  * TikZ
+
 
 ### Tag 3
 
-* 
+  * TikZ Animationen, mehr TikZ 
 
 ### Tag 4
 
-* 
+* Fragestunde
 
 ## Literaturempfehlungen
 
