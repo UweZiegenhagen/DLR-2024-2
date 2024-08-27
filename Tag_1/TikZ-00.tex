@@ -10,6 +10,15 @@
 
 \begin{tikzpicture}
 \draw [step=1cm,blue,thin] (0,0) grid (16,10);
+
+        \foreach \i in {0,1,...,15}{
+                \node[blue,right] at (\i,0) (\i) {\i};
+            }
+        \foreach \j in {0,1,...,10}{
+                \node[blue,right] at (0,\j) (\j) {\j};
+            }
+        
+
 \draw (0,0) -- (1,1);
 \draw[ultra thick] (3,2) -- (4,5) -- (6,3);
 \draw[red,ultra thick,loosely dotted] (8,1) -- (10,7) -- (12,4) -- cycle;
