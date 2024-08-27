@@ -1,0 +1,59 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrbook}
+
+\usepackage{babel}
+\usepackage[T1]{fontenc} % für Fonts in pdflatex
+\usepackage{booktabs}
+
+\usepackage{graphicx} % Bilder benutzen
+\usepackage{csquotes} % Gänsenfüßchen++
+\usepackage{paralist} % kurze Versionen von Aufzählungen
+\usepackage{xcolor} % Farben benutzen
+
+\usepackage{microtype} % Mikrotypografie-Erweiterungen
+
+\usepackage{blindtext}
+
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,                     % show bookmarks bar
+    unicode=false,                      % non - Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                        % show Acrobat’s toolbar
+    pdfmenubar=true,                        % show Acrobat’s menu
+    pdffitwindow=false,                 % window fit to page when opened
+    pdfstartview={FitH},                    % fits the width of the page to the window
+    pdftitle={My title},                        % title
+    pdfauthor={Author},                 % author
+    pdfsubject={Subject},                   % subject of the document
+    pdfcreator={Creator},                   % creator of the document
+    pdfproducer={Producer},             % producer of the document
+    pdfkeywords={keyword1, key2, key3},   % list of keywords
+    pdfnewwindow=true,                  % links in new window
+    colorlinks=true,                        % false: boxed links; true: colored links
+    linkcolor=red,                          % color of internal links
+    filecolor=cyan,                     % color of file links
+    citecolor=green,                     % color of file links
+    urlcolor=magenta                        % color of external links
+}
+
+\title{Meine Dissertation}
+\author{Uwe Ziegenhagen}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+
+\chapter{Einleitung}
+
+\blindtext[10]
+
+
+\end{document}

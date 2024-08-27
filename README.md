@@ -7,7 +7,7 @@
 * Dienstag, 2024-08-27
 * Donnerstag, 2024-08-29
 * Dienstag, 2024-09-03
-* Dienstag, 2024-09-11
+* Mittwoch, 2024-09-11
 
 An jedem Tag treffen wir uns von 9--11 und 13--15 im virtuellen Kursraum, die Zugangsdaten werden per E-Mail versandt.
 
@@ -51,12 +51,10 @@ bitte in ein privates Repository, da ich gern Wildwuchs verhindern möchte.
 
 Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
-### Tag 1
 
-* Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
-* Themen für die Termine:
+### Themen für die Termine:
 
-  * LaTeX Präsentationen
+
   * TikZ
   * Python-LaTeX-Schnittstellen
   * Tipps und Tricks
@@ -65,6 +63,25 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
   * LaTeX-Probleme lösen, die sich nicht mit zwei Minuten Googeln erledigen lassen
   * LaTeX-Korrekturfunktionen
   * Standardwerk für typografische Fragen
+  * Fehler finden in LaTeX Dokumenten
+  * Große Dokumente bearbeiten
+  * Das "Minimalbeispiel"
+  * Eigene Templates
+  * Kompilierzeiten verringern
+  * Mit LaTeX zitieren
+  * hyperref
+  * Lualatex benutzen
+
+
+### Tag 1
+
+* Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
+
+* Fehler finden in LaTeX Dokumenten am praktischen Beispiel
+* Eine eigene Vorlage
+* LaTeX Präsentationen
+
+
  
 
 
