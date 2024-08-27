@@ -83,7 +83,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 * Fehler finden in LaTeX Dokumenten am praktischen Beispiel
 * Eine eigene Vorlage
-* LaTeX Präsentationen
+* LaTeX Präsentationen, Step 1
 
 
  
