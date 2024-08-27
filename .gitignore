@@ -6,3 +6,6 @@
 *.txt
 *.toc
 *.out
+*.nav
+*.gz
+*.snm

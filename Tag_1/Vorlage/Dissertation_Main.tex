@@ -5,14 +5,16 @@
 
 \usepackage{babel}
 \usepackage[T1]{fontenc} % für Fonts in pdflatex
-\usepackage{booktabs}
+\usepackage{lmodern}
 
+\usepackage{booktabs}
 \usepackage{graphicx} % Bilder benutzen
 \usepackage{csquotes} % Gänsenfüßchen++
 \usepackage{paralist} % kurze Versionen von Aufzählungen
 \usepackage{xcolor} % Farben benutzen
 
 \usepackage{microtype} % Mikrotypografie-Erweiterungen
+
 
 \usepackage{blindtext}
 
@@ -32,10 +34,10 @@
     pdfkeywords={keyword1, key2, key3},   % list of keywords
     pdfnewwindow=true,                  % links in new window
     colorlinks=true,                        % false: boxed links; true: colored links
-    linkcolor=red,                          % color of internal links
-    filecolor=cyan,                     % color of file links
-    citecolor=green,                     % color of file links
-    urlcolor=magenta                        % color of external links
+    linkcolor=blue,                          % color of internal links
+    filecolor=blue,                     % color of file links
+    citecolor=blue,                     % color of file links
+    urlcolor=blue                        % color of external links
 }
 
 \title{Meine Dissertation}
@@ -50,8 +52,22 @@
 
 \listoftables
 
-
 \chapter{Einleitung}
+\section{Hallo}\label{sec:hallo}
+
+\blindtext[20]
+
+
+\section{Welt}\label{sec:hallo}
+
+
+siehe \ref{sec:hallo}
+
+
+\blindtext[10]
+
+
+\section{Welt}
 
 \blindtext[10]
 

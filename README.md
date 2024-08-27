@@ -71,6 +71,10 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
   * Mit LaTeX zitieren
   * hyperref
   * Lualatex benutzen
+  * Schneller TeXen mit Tastaturkürzeln
+  * TeXStudio konfigurieren
+  * labels und refs
+  * \centering 
 
 
 ### Tag 1

@@ -1,0 +1,72 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{beamer}
+
+\usepackage{babel}
+\usepackage[T1]{fontenc}
+
+\title{Meine erste Präsentation}
+\author{Uwe Ziegenhagen}
+\subtitle{Warum LaTeX cool ist}
+\institute{Dante e.V.}
+
+\begin{document}
+
+\begin{frame}
+
+\maketitle
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Einleitung}
+
+\begin{itemize}
+\item Hallo Welt
+\item ich bin 
+\item eine Präsentation
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Einleitung}
+
+\begin{enumerate}
+\item Hallo Welt
+\item ich bin 
+\item eine Präsentation
+\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Einleitung}
+
+\begin{description}
+\item [Apfel] Hallo Welt
+\item [Birne]  ich bin 
+\item [Pflaume] eine Präsentation
+\end{description}
+
+
+\end{frame}
+
+\begin{frame}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.75\textwidth]{Bilder/Katze}
+\caption{Hallo}
+\end{center}
+\end{figure}
+
+
+\end{frame}
+
+
+\end{document}
+
