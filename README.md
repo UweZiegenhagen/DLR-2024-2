@@ -9,7 +9,8 @@
 * Dienstag, 2024-09-03
 * Mittwoch, 2024-09-11
 
-An jedem Tag treffen wir uns von 9--11 und 13--15 im virtuellen Kursraum, die Zugangsdaten werden per E-Mail versandt.
+An jedem Tag treffen wir uns von 9--11 und 13--15 im virtuellen Kursraum, die Zugangsdaten 
+werden per E-Mail versandt.
 
 ## "Ground rules"
 
@@ -54,32 +55,15 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 ### Themen für die Termine:
 
-
-  * TikZ
-  * Python-LaTeX-Schnittstellen
-  * Tipps und Tricks
-  * Definition von Einheiten bei Variablen
-  * Formatierung von Gleichungen
-  * LaTeX-Probleme lösen, die sich nicht mit zwei Minuten Googeln erledigen lassen
+  * LaTeX-Probleme lösen, die sich nicht mit zwei Minuten Googeln erledigen lassen, das "Minimalbeispiel"
   * LaTeX-Korrekturfunktionen
-  * Standardwerk für typografische Fragen
-  * Fehler finden in LaTeX Dokumenten
-  * Große Dokumente bearbeiten
-  * Das "Minimalbeispiel"
-  * Eigene Templates
-  * Kompilierzeiten verringern
-  * Mit LaTeX zitieren
-  * Lualatex benutzen
-  * FloatBarrier
-  * labels und refs
-  * \centering 
 
 
 ### Tag 1
 
   * Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
   * Fehler finden in LaTeX Dokumenten am praktischen Beispiel
-    - $ Zeichen in der Fehlermeldung: eventuell fehlt der mathematische Modus 
+    - $ Zeichen in der Fehlermeldung: eventuell fehlt der mathematische Modus
   * Eine eigene Vorlage bauen
   * hyperref (als letztes Paket laden)
   * LaTeX Präsentationen, Step 1
@@ -88,26 +72,37 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
   * Schneller TeXen mit Tastaturkürzeln (Autohotkey)
   * TikZ - TikZ ist kein Zeichenprogramm Teil 1
   * Große Dokumente
- 
 
 
 ### Tag 2
 
-  * Existierende Dokumente (aus Word) TeXen: Erfahrungen
-  * TeXStudio konfigurieren
+  * siunitx zum Einheitensatz
+  * booktabs für schöne Tabellen
+  * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
+  * TeXStudio konfigurieren, dann Alt+Umschalt-F1
+    (https://tex.stackexchange.com/questions/313616/configuring-arara-in-texstudio-on-windows)
   * Mit LaTeX zitieren: thebibliography, bibtex, biblatex/biber
-  * TikZ - TikZ ist kein Zeichenprogramm Teil 2
+  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und so)
   * Lualatex und Copy&Paste aus Word
-  * show refs
+  * show Labels im Rand, mehr zu Labels und Referenzen
+  * \centering versus center Umgebung
+    https://tex.stackexchange.com/questions/23650/when-should-we-use-begincenter-instead-of-centering
 
 
 ### Tag 3
 
-  * TikZ Animationen, mehr TikZ 
+  * Python-LaTeX-Schnittstellen
+  * TikZ Animationen, mehr TikZ
+  * Kompilierzeiten verringern
+  * Formatierung von Gleichungen, amsmath
+  
 
 ### Tag 4
 
-* Fragestunde
+  * Floats richtig fließen lassen
+  * Typografie
+  * nicematrix
+  * Fragestunde
 
 ## Literaturempfehlungen
 
