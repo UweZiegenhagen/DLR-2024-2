@@ -50,7 +50,8 @@ bitte in ein privates Repository, da ich gern Wildwuchs verhindern möchte.
 
 ## Kursinhalte
 
-Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
+Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der 
+Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
 
 ### Themen für die Termine:
@@ -76,14 +77,16 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 ### Tag 2
 
-  * siunitx zum Einheitensatz
-  * booktabs für schöne Tabellen
-  * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
   * TeXStudio konfigurieren, dann Alt+Umschalt-F1
     (https://tex.stackexchange.com/questions/313616/configuring-arara-in-texstudio-on-windows)
+  * Siunitx zum Einheitensatz
+  * Das Booktabs-Paket für schöne Tabellen
+  * Farbige Boxen mit mdframed
+  * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
   * Mit LaTeX zitieren: thebibliography, bibtex, biblatex/biber
   * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und so)
   * Lualatex und Copy&Paste aus Word
+  * Schriftarten in pdflatex, Fonts mit Mathe-Support
   * show Labels im Rand, mehr zu Labels und Referenzen
   * \centering versus center Umgebung
     https://tex.stackexchange.com/questions/23650/when-should-we-use-begincenter-instead-of-centering
@@ -91,6 +94,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 ### Tag 3
 
+  * Farbige Boxen mit tcolorbox
   * Python-LaTeX-Schnittstellen
   * TikZ Animationen, mehr TikZ
   * Kompilierzeiten verringern
@@ -102,6 +106,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
   * Floats richtig fließen lassen
   * Typografie
   * nicematrix
+  * Was sonst noch so geht mit LaTeX
   * Fragestunde
 
 ## Literaturempfehlungen
