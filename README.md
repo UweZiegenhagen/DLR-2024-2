@@ -58,6 +58,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
   * LaTeX-Probleme lösen, die sich nicht mit zwei Minuten Googeln erledigen lassen, das "Minimalbeispiel"
   * LaTeX-Korrekturfunktionen
+  * Akronyme und andere Indizes
 
 
 ### Tag 1
@@ -82,9 +83,11 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Siunitx zum Einheitensatz
   * Das Booktabs-Paket für schöne Tabellen
   * Farbige Boxen mit mdframed
+  * Briefe und Lebensläufe mit LaTeX
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
+  * Mehr zu KOMA-Script
   * Mit LaTeX zitieren: thebibliography, bibtex, biblatex/biber
-  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und so)
+  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
   * Lualatex und Copy&Paste aus Word
   * Schriftarten in pdflatex, Fonts mit Mathe-Support
   * show Labels im Rand, mehr zu Labels und Referenzen
@@ -94,8 +97,10 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
 ### Tag 3
 
+  * Multirow und Multicolumn
   * Farbige Boxen mit tcolorbox
   * Python-LaTeX-Schnittstellen
+  * Poster mit LaTeX gestalten
   * TikZ Animationen, mehr TikZ
   * Kompilierzeiten verringern
   * Formatierung von Gleichungen, amsmath
@@ -105,8 +110,9 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
   * Floats richtig fließen lassen
   * Typografie
+  * Beamer anpassen
   * nicematrix
-  * Was sonst noch so geht mit LaTeX
+  * Was sonst noch so geht mit LaTeX: Leaflets, Pocketmods, ...
   * Fragestunde
 
 ## Literaturempfehlungen
