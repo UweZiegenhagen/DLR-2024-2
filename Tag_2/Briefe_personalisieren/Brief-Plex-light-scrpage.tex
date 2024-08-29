@@ -1,0 +1,46 @@
+%!TEX TS-program = lualatex
+\documentclass[12pt,parskip=half]{scrletter} % twoside
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+
+\setkomavar{fromname}{Max Mustermann}
+\setkomavar{fromaddress}{Musterweg 1, 12346 Musterstadt}
+\setkomavar{yourref}{FA2021/20897-1}
+\setkomavar{yourmail}{01.12.2021}
+\setkomavar{subject}{Übersendung von Unterlagen}
+\setkomavar{myref}[Steuernummer]{20897}
+\setkomavar{firsthead}{}
+\usepackage[usefilenames,RMstyle=Light,SSstyle=Light,TTstyle=Light,DefaultFeatures={Ligatures=Common}]{plex-otf} 
+\renewcommand*\familydefault{\sfdefault}
+
+
+\renewcommand*\letterpagestyle{}% do not change the page style for the letter
+\AddToHook{cmd/opening/after}{\thispagestyle{scrheadings}}% use scrheadings on first letter page
+
+\ohead{A}
+\ofoot{B}
+
+\ihead{C}
+\ifoot{D}
+
+\chead{E}
+\cfoot{F}
+
+
+\begin{document}
+\begin{letter}{Finanzamt Musterstadt \\ Musterweg 1 \\ 12345 Musterstadt}
+\opening{Sehr geehrte Damen und Herren,}
+
+beiliegend erhalten Sie die angeforderten Unterlagen.
+
+\blindtext
+
+\blindtext
+
+\blindtext
+
+\closing{Mit freundlichen Grüßen,}
+\encl{Verdienstbescheinigung 2020 \\ Anlage A38}
+
+\end{letter}
+\end{document}
