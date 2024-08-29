@@ -78,6 +78,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
 ### Tag 2
 
+  * Unbenutzte Pakete finden
   * TeXStudio konfigurieren, dann Alt+Umschalt-F1
     (https://tex.stackexchange.com/questions/313616/configuring-arara-in-texstudio-on-windows)
   * Siunitx zum Einheitensatz
@@ -88,8 +89,8 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Mehr zu KOMA-Script
   * Mit LaTeX zitieren: thebibliography, bibtex, biblatex/biber
   * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
-  * Lualatex und Copy&Paste aus Word
   * Schriftarten in pdflatex, Fonts mit Mathe-Support
+  * Lualatex
   * show Labels im Rand, mehr zu Labels und Referenzen
   * \centering versus center Umgebung
     https://tex.stackexchange.com/questions/23650/when-should-we-use-begincenter-instead-of-centering
