@@ -97,6 +97,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 ### Tag 3
 
   * moderncv komplettes Beispiel
+  * komplexe Tabellen
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
   * Multirow und Multicolumn
   * Farbige Boxen mit tcolorbox
