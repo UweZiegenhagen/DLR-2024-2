@@ -1,0 +1,18 @@
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+\usepackage{ifthen}
+\usepackage{blindtext}
+
+\newboolean{sonntag}
+\setboolean{sonntag}{true}
+
+\begin{document}
+
+\ifthenelse{\boolean{sonntag}}{\blindtext}{Montag} ist mein Lieblingstag.
+
+
+
+
+
+\end{document}

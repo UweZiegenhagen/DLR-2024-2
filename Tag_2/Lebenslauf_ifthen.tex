@@ -1,0 +1,29 @@
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+\usepackage{ifthen}
+\usepackage{blindtext}
+
+\newboolean{paper}
+\setboolean{paper}{false}
+
+\begin{document}
+
+\ifthenelse{\boolean{paper}}{
+\section*{Paper}
+
+\begin{itemize}
+	\item a
+	\item b
+	\item c
+	\item d
+	\item e
+	\item f
+\end{itemize}
+}
+{
+Keine Paper
+}
+
+
+\end{document}
