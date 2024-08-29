@@ -11,3 +11,7 @@
 *.snm
 *.synctex(busy)
 *.sav
+*.xml
+*.bbl
+*.bcf
+*.blg
