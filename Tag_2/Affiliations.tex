@@ -1,0 +1,28 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+
+\usepackage{authblk}
+\usepackage{blindtext}
+\title{Get rich or die trying}
+
+\author[1,2]{Donald Duck}
+\author[1]{Dagobert Duck}
+\author[2]{Mickey Mouse}
+
+\affil[1]{Deutsches Zentrum für Luft- und Raumfahrt e.V. (DLR), Berlin}
+
+\affil[2]{Technische Universität Ilmenau}
+
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\blindtext
+\end{abstract}
+
+\end{document}
