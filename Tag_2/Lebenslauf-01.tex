@@ -1,19 +1,44 @@
 \documentclass[12pt,ngerman]{europecv}
 
 \usepackage{babel}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{eso-pic}
+
+\usepackage{ifthen}
+\usepackage{blindtext}
 
 \usepackage{hyperref}
 \makeatletter
 \def\HyPsd@expand@utfvii{}
 \makeatother
 
-
 \ecvname{Donald Duck}
 \ecvaddress{Am Geldspeicher 3a, 12345 Entenhausen}
 \ecvemail{donald@duck.com}
 \ecvdateofbirth{2.8.1965}
 
+\newboolean{jobdesc}
+\setboolean{jobdesc}{true}
+
+
 \begin{document}
+\AddToShipoutPicture*{\put(400,650){\includegraphics[width=4cm]{Bilder/Katze}}}
+
+\begin{europecv}
 \ecvpersonalinfo
 
+\ecvsection{Ausbildung}
+
+\ecvitem{Dates}{01/2000--02/2008}
+\ecvitem{Employer}{Duck Industries}
+\ifthenelse{\boolean{jobdesc}}{
+\ecvitem{Job Description}{Dagobert's buddy for everything }
+}{}
+
+
+
+
+\end{europecv}
+\AddToShipoutPicture*{\put(100,637){\textcolor{red}{\rule{3cm}{2cm}}}}
 \end{document}
