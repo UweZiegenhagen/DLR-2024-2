@@ -85,19 +85,18 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Das Booktabs-Paket für schöne Tabellen
   * Briefe und Lebensläufe mit LaTeX
   * Farbige Boxen mit mdframed
-  * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
-  * Mehr zu KOMA-Script
   * Mit LaTeX zitieren: thebibliography, bibtex, biblatex/biber
-  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
   * Schriftarten in pdflatex, Fonts mit Mathe-Support
   * Lualatex
-  * show Labels im Rand, mehr zu Labels und Referenzen
+  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
   * \centering versus center Umgebung
     https://tex.stackexchange.com/questions/23650/when-should-we-use-begincenter-instead-of-centering
-
+  * show Labels im Rand, mehr zu Labels und Referenzen
+  * Mehr zu KOMA-Script
 
 ### Tag 3
 
+  * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
   * Multirow und Multicolumn
   * Farbige Boxen mit tcolorbox
   * Python-LaTeX-Schnittstellen
