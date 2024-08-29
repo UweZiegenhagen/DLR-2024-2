@@ -1,0 +1,32 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[11pt,ngerman,parskip=half]{scrartcl}
+
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage{mdframed}
+\usepackage{xcolor}
+
+\begin{document}
+
+\blindtext[2]
+
+\begin{mdframed}
+\blindtext
+\end{mdframed}
+
+\blindtext[1]
+
+\begin{mdframed}[linecolor=blue,backgroundcolor=lightgray,%
+leftmargin=1cm,rightmargin=1cm,frametitle={Zusammenfassung}]
+\blindtext
+\end{mdframed}
+
+
+\blindtext[2]
+
+\blindtext[2]
+
+\blindtext[2]
+
+\end{document}
