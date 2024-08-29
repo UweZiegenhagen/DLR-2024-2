@@ -96,6 +96,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
 ### Tag 3
 
+  * biblatex Namen abkürzen
   * moderncv komplettes Beispiel
   * komplexe Tabellen
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
@@ -107,6 +108,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Kompilierzeiten verringern
   * Formatierung von Gleichungen, amsmath
   * OCG mit LaTeX
+  * Svens Präambel
 
 ### Tag 4
 

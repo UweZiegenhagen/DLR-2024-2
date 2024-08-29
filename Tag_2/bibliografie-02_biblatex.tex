@@ -9,7 +9,7 @@
 \usepackage{babel}
 \usepackage{blindtext}
 
-\usepackage[style=authortitle-icomp, backend=biber]{biblatex}
+\usepackage[style=authoryear-icomp, backend=biber]{biblatex}
 \addbibresource{Literatur.bib}
 
 \usepackage{hyperref}
@@ -36,11 +36,21 @@
 
 \begin{document}
 
-\blindtext \cite{Salerno2005}
+\blindtext \cite{Salerno2005} and Duck\footcite{Marques2005} und  Duck\footcite{Marques2005}  
+
+\blindtext \citeauthor{Knuth1984} hat in seinem im Jahr \citeyear{Knuth1984} erschienenen Buch \citetitle{Knuth1984} coole Dinge beschrieben.
+
+\citeauthor{Marques2005}
+
 
 \nocite{*}
 
 \printbibliography
+
+
+\printbibliography[title={Coole Artikel}, type=article]
+
+\printbibliography[title={Coole Bücher }, type=book]
 
 
 \end{document}
