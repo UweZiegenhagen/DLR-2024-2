@@ -83,8 +83,8 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
     (https://tex.stackexchange.com/questions/313616/configuring-arara-in-texstudio-on-windows)
   * Siunitx zum Einheitensatz
   * Das Booktabs-Paket für schöne Tabellen
-  * Farbige Boxen mit mdframed
   * Briefe und Lebensläufe mit LaTeX
+  * Farbige Boxen mit mdframed
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
   * Mehr zu KOMA-Script
   * Mit LaTeX zitieren: thebibliography, bibtex, biblatex/biber
