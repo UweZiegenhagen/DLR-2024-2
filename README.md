@@ -92,11 +92,12 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 ### Tag 3
 
   * show Labels im Rand, mehr zu Labels und Referenzen
-  * Mehr zu KOMA-Script
+  * Mehr zu KOMA-Script: lebende Kolumnentitel
   * Schriftarten in pdflatex, Fonts mit Mathe-Support
   * Lualatex
   * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
-  * biblatex Namen abkürzen
+  * biblatex Namen abkürzen: firstinits=true beim Laden von biblatex
+    https://tex.stackexchange.com/questions/21974/biblatex-abbreviated-author-names
   * moderncv komplettes Beispiel
   * komplexe Tabellen
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
