@@ -1,0 +1,9 @@
+\toprule%
+\bfseries \setocgtabularheader{Firstname}{First name}
+& \bfseries   \setocgtabularheader{Lastname}{Last name}
+& \bfseries  \setocgtabularheader{Grade}{Grade}
+\DTLforeach{sdata}{\first=Firstname, \last=Lastname,\grade=Grade}{%
+\DTLiffirstrow{\\ \midrule}{\\}
+\first & \last & \grade
+}
+\\ \bottomrule%

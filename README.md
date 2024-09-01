@@ -95,11 +95,12 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Mehr zu KOMA-Script: lebende Kolumnentitel
   * Schriftarten in pdflatex, Fonts mit Mathe-Support
   * Lualatex
-  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
+  * Seiten rotieren lassen
   * biblatex Namen abkürzen: firstinits=true beim Laden von biblatex
     https://tex.stackexchange.com/questions/21974/biblatex-abbreviated-author-names
+  * OCG mit LaTeX: das ocg-p Paket
+  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
   * moderncv komplettes Beispiel
-  * komplexe Tabellen
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
   * Multirow und Multicolumn
   * Farbige Boxen mit tcolorbox
@@ -108,13 +109,14 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * TikZ Animationen, mehr TikZ
   * Kompilierzeiten verringern
   * Formatierung von Gleichungen, amsmath
-  * OCG mit LaTeX
   * Svens Präambel
 
 ### Tag 4
 
   * Floats richtig fließen lassen
   * Typografie
+  * komplexe Tabellen
+  * Glossare
   * Beamer anpassen
   * nicematrix
   * Was sonst noch so geht mit LaTeX: Leaflets, Pocketmods, ...
