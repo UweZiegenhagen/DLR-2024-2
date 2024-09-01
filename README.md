@@ -86,16 +86,16 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Briefe und Lebensläufe mit LaTeX
   * Farbige Boxen mit mdframed
   * Mit LaTeX zitieren: thebibliography, bibtex, biblatex/biber
-  * Schriftarten in pdflatex, Fonts mit Mathe-Support
-  * Lualatex
-  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
   * \centering versus center Umgebung
     https://tex.stackexchange.com/questions/23650/when-should-we-use-begincenter-instead-of-centering
-  * show Labels im Rand, mehr zu Labels und Referenzen
-  * Mehr zu KOMA-Script
 
 ### Tag 3
 
+  * show Labels im Rand, mehr zu Labels und Referenzen
+  * Mehr zu KOMA-Script
+  * Schriftarten in pdflatex, Fonts mit Mathe-Support
+  * Lualatex
+  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
   * biblatex Namen abkürzen
   * moderncv komplettes Beispiel
   * komplexe Tabellen
