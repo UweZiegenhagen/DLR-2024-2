@@ -91,22 +91,21 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
 ### Tag 3
 
+  * moderncv komplettes Beispiel
+  * Farbige Boxen mit tcolorbox
   * show Labels im Rand, mehr zu Labels und Referenzen
   * Mehr zu KOMA-Script: lebende Kolumnentitel
   * Schriftarten in pdflatex, Fonts mit Mathe-Support
   * Lualatex
-  * Seiten rotieren lassen
+  * Seiten rotieren lassen, pdfpages (mit ocg)
+  * OCG mit LaTeX: das ocg-p Paket
   * biblatex Namen abkürzen: firstinits=true beim Laden von biblatex
     https://tex.stackexchange.com/questions/21974/biblatex-abbreviated-author-names
-  * OCG mit LaTeX: das ocg-p Paket
   * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
-  * moderncv komplettes Beispiel
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
   * Multirow und Multicolumn
-  * Farbige Boxen mit tcolorbox
   * Python-LaTeX-Schnittstellen
   * Poster mit LaTeX gestalten
-  * TikZ Animationen, mehr TikZ
   * Kompilierzeiten verringern
   * Formatierung von Gleichungen, amsmath
   * Svens Präambel
@@ -118,6 +117,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * komplexe Tabellen
   * Glossare
   * Beamer anpassen
+  * TikZ Animationen, mehr TikZ
   * nicematrix
   * Was sonst noch so geht mit LaTeX: Leaflets, Pocketmods, ...
   * Fragestunde
