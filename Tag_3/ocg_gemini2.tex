@@ -1,0 +1,28 @@
+% Beispiel geht nicht
+\documentclass{article}
+\usepackage{ocg}
+
+\begin{document}
+
+\section{Ein Dokument mit OCGs und eingebundenen PDF-Seiten}
+
+\subsection{OCGs: Interaktive Elemente}
+
+Mit `ocg` können Sie Elemente erstellen, die der Benutzer ein- und ausschalten kann.
+
+\begin{ocg}
+\ocguse{alle}
+\ocgoff{nurText}
+\ocgoff{nurBild}
+
+Nur Text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  
+
+
+\begin{ocg}{nurBild}
+\includegraphics[width=5cm]{Bilder/Katze}
+\end{ocg}
+\end{ocg}
+
+
+
+\end{document}

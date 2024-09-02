@@ -1,0 +1,43 @@
+% Beispiel funktioniert nicht
+\documentclass{article}
+\usepackage[german]{babel}
+
+\usepackage{ocgx2}
+\usepackage{tikz}
+\usepackage{xstring}
+
+\parindent=0pt
+
+\title{Beispieldokument  
+ mit OCG}
+\author{Dein Name}
+\date{\today}
+
+\usepackage{hyperref}
+\begin{document}
+\maketitle
+
+% Definiere einen Counter, der jeweils die maximale Anzahl Zeilen in einem gelayerten Block zählt
+\newcounter{maxzeilen}
+
+% Definiere die verschiedenen Layer, ihre interen  
+ Abkürzungen und ob sie am Anfang sichtbar sind ({1} oder {0})
+\begin{ocg}{Layer 1}{layer1}{1}
+  Dieser Text ist im Layer 1.
+\end{ocg}
+
+\begin{ocg}{Layer 2}{layer2}{0}
+  Dieser Text ist im Layer 2 und ist anfangs ausgeblendet.
+\end{ocg}
+
+% Ein Beispiel mit einem TikZ-Bild, das in einem Layer enthalten ist
+\begin{ocg}{TikZ-Bild}{tikzbild}{0}
+\begin{tikzpicture}
+  \draw (0,0) -- (2,2);
+\end{tikzpicture}
+\end{ocg}
+
+% Ein Beispiel mit einem Link, der einen Layer ein- oder ausblendet
+\hyperref[layer2]{Hier klicken, um Layer 2 ein- oder auszublenden}
+
+\end{document}

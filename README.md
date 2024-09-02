@@ -99,11 +99,10 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Mehr zu KOMA-Script: lebende Kolumnentitel
   * Schriftarten in pdflatex, Fonts mit Mathe-Support
   * Lualatex
-  * Seiten rotieren lassen, pdfpages (mit ocg)
-  * OCG mit LaTeX: das ocg-p Paket
+  * Seiten rotieren lassen
+  * OCG mit LaTeX
   * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
-  * Multirow und Multicolumn
   * Python-LaTeX-Schnittstellen
   * Poster mit LaTeX gestalten
   * Kompilierzeiten verringern
@@ -114,7 +113,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
   * Floats richtig fließen lassen
   * Typografie
-  * komplexe Tabellen
+  * komplexe Tabellen, Multirow und Multicolumn
   * Glossare
   * Beamer anpassen
   * TikZ Animationen, mehr TikZ
