@@ -94,13 +94,13 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * moderncv komplettes Beispiel
   * Farbige Boxen mit tcolorbox
   * show Labels im Rand, mehr zu Labels und Referenzen
+  * biblatex Namen abkürzen: firstinits=true beim Laden von biblatex
+    https://tex.stackexchange.com/questions/21974/biblatex-abbreviated-author-names
   * Mehr zu KOMA-Script: lebende Kolumnentitel
   * Schriftarten in pdflatex, Fonts mit Mathe-Support
   * Lualatex
   * Seiten rotieren lassen, pdfpages (mit ocg)
   * OCG mit LaTeX: das ocg-p Paket
-  * biblatex Namen abkürzen: firstinits=true beim Laden von biblatex
-    https://tex.stackexchange.com/questions/21974/biblatex-abbreviated-author-names
   * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
   * Multirow und Multicolumn
@@ -119,7 +119,9 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Beamer anpassen
   * TikZ Animationen, mehr TikZ
   * nicematrix
-  * Was sonst noch so geht mit LaTeX: Leaflets, Pocketmods, ...
+  * varsfromjobname
+  * Was sonst noch so geht mit LaTeX: Leaflets, Labels, Pocketmods, ...
+  * HID Remapper: https://github.com/jfedor2/hid-remapper :-)
   * Fragestunde
 
 ## Literaturempfehlungen

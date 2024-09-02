@@ -5,8 +5,20 @@
 
 \input{preamble}
 
-\usepackage{lineno}
-\linenumbers
+\usepackage[automark]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
+
+%\ohead[\headmark]{\headmark} %
+%\ofoot[\pagemark]{\pagemark\ von \pageref{LastPage}} % 
+\ihead[1]{2}
+\ifoot[3]{4}
+\chead[5]{6}
+\cfoot[7]{8}
+\ohead[9]{10}
+\ofoot[11]{12}
+
+
 
 \title{Meine Dissertation}
 \author{Uwe Ziegenhagen}
