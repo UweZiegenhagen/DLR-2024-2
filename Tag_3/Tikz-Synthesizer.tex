@@ -45,7 +45,7 @@ align=center,node distance=0.5cm},scale=0.9, transform shape]
 \coordinate (vco2vcf1) at ($(vco21)!0.5!(vcf1)$);
 \coordinate (vco2vcf2) at ($(vco22)!0.5!(vcf2)$);
 
-\draw[->,thick] (vco1.east) -- (vco1adsr1) --  (vco2vcf2) -- (vcf2);
+\draw[red,->,thick] (vco1.east) -- (vco1adsr1) --  (vco2vcf2) -- (vcf2);
 \draw[->,thick] (noise.east) -- (noisetemp1) --  (vco2vcf1) -- (vcf1);
 
 \draw[->,thick] (adsr1) -- (vcf);
@@ -56,6 +56,6 @@ align=center,node distance=0.5cm},scale=0.9, transform shape]
 \draw [thick,->] (keyboard) -| (adsr1);
 \draw [thick,->] (keyboard) -| (adsr2);
 \draw [thick,->] (keyboard) |- (vco1);
-\draw [thick,->] (keyboard) |- (vco2.base west);
+\draw [thick,->,green] (keyboard) |- (vco2.base west);
 \end{tikzpicture}
 \end{document}
