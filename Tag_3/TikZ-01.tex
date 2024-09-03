@@ -5,6 +5,8 @@
 \usetikzlibrary{shapes}
 % https://tikz.dev/tikz-arrows
 \usetikzlibrary {arrows.meta} 
+\usetikzlibrary {shadows} % für Schlagschatten 
+
 
 \usepackage{blindtext}
 
@@ -12,6 +14,11 @@
 
 \blindtext
 
+\tikzset{wolke/.style = {
+shape=cloud, fill = red, minimum width=2cm,minimum height=2cm
+}}
+
+\tikzset{gwolke/.style = {wolke, fill = yellow}}
 
 \begin{tikzpicture} 
 \draw [step=1cm,blue,thin] (0,0) grid (15,10);
@@ -26,11 +33,21 @@
 
 \draw [|<->|] (1.5,.6) -- node[above=1mm] {5mm} (2,.6);
 
-\node[cloud, draw, fill=gray!20, aspect=2] at (8,6) {ABC};
+\node[cloud, draw, fill=gray!20, aspect=2] at (8,6) {ABwrqrwqr C};
+
+\node[rectangle,draw,rounded corners,fill=yellow,minimum width=3cm,minimum height=2cm,drop shadow={opacity=0.75}] (a) at (2,7){HalloWelt};
+
+\node[wolke] (e) at (5,2){U};
+
+\node[gwolke] (d) at (8,2){U};
 
 \end{tikzpicture}
 
 \blindtext
+
+
+
+
 
 
 \end{document}
