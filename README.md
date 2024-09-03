@@ -97,7 +97,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Mehr zu KOMA-Script: lebende Kolumnentitel
   * biblatex Namen abkürzen: firstinits=true beim Laden von biblatex
     https://tex.stackexchange.com/questions/21974/biblatex-abbreviated-author-names
-  * Schriftarten in pdflatex, Fonts mit Mathe-Support
+  * Schriftarten in pdflatex, Fonts mit Mathe-Support ==> Tug Font Catalogue
   * Lualatex
   * Seiten rotieren lassen
   * OCG mit LaTeX
@@ -112,6 +112,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
   * Floats richtig fließen lassen
   * Typografie
+  * Bilder nachträglich beschriften
   * komplexe Tabellen, Multirow und Multicolumn
   * Glossare
   * Kompilierzeiten verringern  
