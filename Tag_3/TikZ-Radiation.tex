@@ -1,0 +1,19 @@
+%!TEX TS-program = LuaLaTeX
+\documentclass[tikz,border=0.5cm]{standalone}
+
+\usetikzlibrary { decorations.pathmorphing, decorations.pathreplacing, decorations.shapes, } 
+
+\begin{document}
+
+\begin{tikzpicture}
+
+\node (a) at (5,5){A};
+\node (b) at (2,3){B};
+\node (c) at (2,7){C};
+
+\draw[decorate,decoration=zigzag] (a) -- (b);
+\draw[decorate,decoration=zigzag] (a) -- (c);
+
+
+\end{tikzpicture}
+\end{document}
