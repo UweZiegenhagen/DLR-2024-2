@@ -1,28 +1,20 @@
 \documentclass[a4paper,ngerman,12pt]{scrartcl} 
  
 \usepackage{babel}
-\usepackage[a4paper,top=2.5cm,bottom=3cm,left=2.5cm,right=2cm]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage{booktabs}
-\usepackage{graphicx}
-\usepackage{csquotes}
-\usepackage{paralist}
 \usepackage[math]{iwona}
-\usepackage{textcomp}
-\usepackage{listings}
 \usepackage{xcolor}
- 
- 
-%%%%%%%
+
 \definecolor{hellgelb}{rgb}{1,1,0.8}
 \definecolor{lightgelb}{rgb}{1,1,0.8}
 \definecolor{colKeys}{rgb}{0,0,1}
 \definecolor{colIdentifier}{rgb}{0,0,0}
 \definecolor{colComments}{rgb}{1,0,0}
 \definecolor{colString}{rgb}{0,0.5,0}
+
+\usepackage{listings} % <===== 
  
-\usepackage{listings}
-\lstset{%
+\lstset{% Mein Standard Listings template
     float=hbp,%
     basicstyle=\ttfamily\footnotesize, %
     identifierstyle=\color{colIdentifier}, %
@@ -39,12 +31,15 @@
     numbers=left, %
     numberstyle=\tiny, %
     breaklines=true, %
+    language={Python},
+    morekeywords={choice,remove},
     backgroundcolor=\color{hellgelb}, %
     breakautoindent=true, %
     captionpos=b%
 }
  
-%%%%%%%%%%%%
+ 
+%%%%%%%%%%%% für Umlaute in Listings
 \lstset{literate=%
     {Ö}{{\"O}}1
     {Ä}{{\"A}}1
@@ -56,13 +51,11 @@
     {~}{{\textasciitilde}}1
 }
  
- 
- 
 
 \begin{document}
  
  
-\begin{lstlisting}[language={Python}]
+\begin{lstlisting}
 def create_bruch():
     zahlen = list(range(1,13))
     zaehler = random.choice(zahlen)
@@ -71,5 +64,29 @@ def create_bruch():
     return 1234
 \end{lstlisting}
  
+\begin{lstlisting}
+def create_bruch():
+    zahlen = list(range(1,13))
+    zaehler = random.choice(zahlen)
+    zahlen.remove(zaehler)
+    nenner = random.choice(zahlen)
+    return 1234
+\end{lstlisting}
+
+\clearpage
+
+\lstinputlisting[caption={Mein Listing},linerange={1-6,20-22}]{paramikooo.py}
+
 
 \end{document}
+
+
+
+
+
+ 
+
+ 
+
+ 
+ 

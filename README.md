@@ -115,6 +115,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Bilder nachträglich beschriften
   * komplexe Tabellen, Multirow und Multicolumn
   * Glossare
+  * jupynotex 
   * Kompilierzeiten verringern  
   * Beamer anpassen
   * TikZ Animationen, mehr TikZ

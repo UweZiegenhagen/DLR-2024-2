@@ -3,18 +3,26 @@
 
 \documentclass[parskip=full]{scrartcl}
 \usepackage[executable=python.exe]{pyluatex}
+
+
+\newcommand{\randint}[2]{\py{random.randint(#1, #2)}}
+\begin{document}
+
 \begin{python}
 import math
 import random
 random.seed(0)
-greeting = 'Hello PyLuaTeX!'
+greeting = 'Hello DLR!'
 \end{python}
-\newcommand{\randint}[2]{\py{random.randint(#1, #2)}}
-\begin{document}
+
 \py{greeting}
 
 $\sqrt{40} = \py{math.sqrt(40)}$
 
 \randint{2}{545}
+
+\pyfile{hallihallo.py}
+
+\py{hallo}
 
 \end{document}

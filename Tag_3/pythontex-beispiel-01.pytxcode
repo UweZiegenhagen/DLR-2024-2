@@ -1,0 +1,58 @@
+=>PYTHONTEX#py#default#default#0#i#####16#
+1+1+3
+=>PYTHONTEX#py#default#default#1#i#####19#
+2**90
+=>PYTHONTEX#py#default#default#2#code#####23#
+from sympy import *
+x, y = symbols("x y")
+binome = []
+for exponent in range(3, 7):
+    binome.append((x + y)**exponent)
+    print(r"\begin{align*}")
+    for expr in binome:
+        print(r"%s &= %s\\" % (latex(expr), latex(expand(expr))))
+    print(r"\end{align*}")
+=>PYTHONTEX#py#default#default#3#code#####35#
+from pylab import *
+def f(t):
+    return cos(3.5 * pi * t) * exp(-t)
+
+t = linspace(0, 10, 500)
+y = f(t)
+clf()
+figure(figsize=(5, 3))
+rc("text", usetex=True)
+plot(t, y)
+title(r'Ged\"ampfter exponentieller Zerfall')
+text(6, 0.15, r"$y = \cos(2.5 \pi t) e^{-t}$")
+xlabel("Zeit (t)")
+ylabel("Spannung (mV)")
+savefig("zerfall.pdf", bbox_inches="tight")
+print(r"\begin{center}")
+print(r"\includegraphics[width=0.6\textwidth]{zerfall.pdf}")
+print(r"\end{center}")
+=>PYTHONTEX:SETTINGS#
+version=0.18
+outputdir=pythontex-files-pythontex-beispiel-01
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python3|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python3|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python3|
+pygfamily=pylabcon|pycon|

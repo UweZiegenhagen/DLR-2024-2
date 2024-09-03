@@ -35,7 +35,7 @@ for exponent in range(3, 7):
 \begin{pycode}
 from pylab import *
 def f(t):
-    return cos(3 * pi * t) * exp(-t)
+    return cos(3.5 * pi * t) * exp(-t)
 
 t = linspace(0, 10, 500)
 y = f(t)
@@ -44,7 +44,7 @@ figure(figsize=(5, 3))
 rc("text", usetex=True)
 plot(t, y)
 title(r'Ged\"ampfter exponentieller Zerfall') 
-text(6, 0.15, r"$y = \cos(2 \pi t) e^{-t}$")
+text(6, 0.15, r"$y = \cos(2.5 \pi t) e^{-t}$")
 xlabel("Zeit (t)")
 ylabel("Spannung (mV)")
 savefig("zerfall.pdf", bbox_inches="tight")

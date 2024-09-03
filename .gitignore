@@ -18,3 +18,7 @@
 /Tag_3/Wordpaper
 *.pygtex
 *.pygstyle
+*.stdout
+*.pytxmcr
+*.pytxpyg
+*.pkl
