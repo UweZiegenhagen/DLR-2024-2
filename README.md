@@ -101,11 +101,10 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Lualatex
   * Seiten rotieren lassen
   * OCG mit LaTeX
-  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
+  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
   * Python-LaTeX-Schnittstellen
   * Poster mit LaTeX gestalten
-  * Kompilierzeiten verringern
   * Formatierung von Gleichungen, amsmath
   * Svens Präambel
 
@@ -115,6 +114,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Typografie
   * komplexe Tabellen, Multirow und Multicolumn
   * Glossare
+  * Kompilierzeiten verringern  
   * Beamer anpassen
   * TikZ Animationen, mehr TikZ
   * nicematrix
