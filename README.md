@@ -103,6 +103,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * OCG mit LaTeX
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
   * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Berechnungen)
+  * HID Remapper: https://github.com/jfedor2/hid-remapper :-)
   * Python-LaTeX-Schnittstellen
   * Poster mit LaTeX gestalten
   * Formatierung von Gleichungen, amsmath
@@ -122,7 +123,6 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * nicematrix
   * varsfromjobname
   * Was sonst noch so geht mit LaTeX: Leaflets, Labels, Pocketmods, ...
-  * HID Remapper: https://github.com/jfedor2/hid-remapper :-)
   * Fragestunde
 
 ## Literaturempfehlungen
