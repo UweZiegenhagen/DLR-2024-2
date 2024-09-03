@@ -102,7 +102,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Seiten rotieren lassen
   * OCG mit LaTeX
   * Existierende Dokumente (aus Word) TeXen: Erfahrungen und Tests
-  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Coordinates)
+  * TikZ - TikZ ist kein Zeichenprogramm Teil 2 (Nodes und Berechnungen)
   * Python-LaTeX-Schnittstellen
   * Poster mit LaTeX gestalten
   * Formatierung von Gleichungen, amsmath

@@ -1,0 +1,35 @@
+\documentclass[tikz,border=0.5cm]{standalone}
+\usetikzlibrary{positioning,calc}
+
+\tikzset{punkt/.style = {
+    shape=circle, fill = blue, minimum size = 0.2cm
+}}
+
+\begin{document}
+\begin{tikzpicture}[node distance=3cm]
+
+\node[punkt](a) at (1,1){};
+\node[punkt](b) at (6,5){};
+
+\path (a) -- (b) coordinate[pos=0.25] (ab-viertel);  
+\node[label=ab-viertel] at (ab-viertel) [punkt] {}; 
+
+\path (a) -- (b) coordinate[pos=0.5] (ab-halbe);  
+\node[label=ab-halbe] at (ab-halbe) [punkt] {}; 
+
+\end{tikzpicture}
+\end{document} 
+
+
+\path (r.south west) -- (r.north) coordinate[pos=0.25] (r-sw-n-viertel);  
+\node[label=r-sw-n-viertel] at (r-sw-n-viertel) [punkt] {}; 
+  
+\path (r.south west) -- (r.north) coordinate[pos=0.5] (r-sw-n-mitte);  
+\node[label=r-sw-n-mitte] at (r-sw-n-mitte) [punkt] {}; 
+
+\path (r.south west) -- (r.north) coordinate[pos=0.75] (r-sw-n-dreiviertel);  
+\node[label=r-sw-n-dreiviertel] at (r-sw-n-dreiviertel) [punkt] {}; 
+
+\node[label=r-n-se-viertel] at ($(r.south east)!.25!(r.north)$) [punkt] {};
+ 
+  

@@ -16,3 +16,5 @@
 *.bcf
 *.blg
 /Tag_3/Wordpaper
+*.pygtex
+*.pygstyle

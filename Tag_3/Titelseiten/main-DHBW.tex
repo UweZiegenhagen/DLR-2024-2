@@ -1,0 +1,46 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrreprt}
+
+\usepackage{babel}
+\usepackage{blindtext}
+
+\usepackage{uni-titlepage}
+\usepackage{varsfromjobname}
+
+\TitlePageStyle{\gettwofromjobname}
+
+\TitleOption{author}{Donald Duck}
+\TitleOption{advisor}{Daniel Düsentrieb}
+\TitleOption{chair}{Abgastechnik}
+\TitleOption{company}{Poing}
+\TitleOption{course}{Luft- und Raumfahrttechnik}
+\TitleOption{date}{Köln, den \today}
+\TitleOption{dedication}{Zefram Cochrane}
+\TitleOption{academicgrade}{Dr. rer. nat.}
+\TitleOption{discipline}{Engineering}
+\TitleOption{duration}{5 year}
+\TitleOption{faculty}{Maschinenbau}
+\TitleOption{homepage}{www.uni-duesentrieb.de}
+\TitleOption{mainlogo}{\rule{3cm}{3cm}}
+\TitleOption{secondlogo}{\rule{2cm}{2cm}}
+\TitleOption{matriculationnumber}{123456}
+\TitleOption{oralexaminationdate}{05.06.2024}
+\TitleOption{place}{Entenhausen}
+\TitleOption{professor}{Daniel Düsentrieb}
+\TitleOption{publisher}{Starfleet Academy}
+\TitleOption{referee}{I. Newton}
+\TitleOption{science}{Naturwissenschaften}
+\TitleOption{subject}{Master}
+\TitleOption{subtitle}{Entwicklung und Betrieb}
+\TitleOption{title}{Quantenportal}
+\TitleOption{titlehead}{titlehead}
+\TitleOption{university}{Daniel Düsentrieb Universität}
+
+
+
+\begin{document}
+\maketitle
+
+\end{document}
