@@ -7,9 +7,28 @@
 \author{Dr. Daniel Düsentrieb}
 \institute{DLR -- Institut für Alternative Antriebe}
 
+\usetheme{Rays}
 
 \begin{document}
 \maketitle
 
+\block{Blocktitel}{\LARGE\blindtext}
+
+\begin{columns}
+\column{0.3}
+\block{Blocktitel}{\LARGE\blindtext}
+\column{0.7}
+\block{Blocktitel}{
+\begin{tikzfigure}[\LARGE Caption of the image]
+\includegraphics[width=0.5\textwidth]{Bilder/Katze}
+\end{tikzfigure}
+}
+\block{Blocktitel}{
+\large\blindtext
+}
+
+\end{columns}
+
+\block{Blocktitel}{\LARGE\blindtext}
 
 \end{document}
