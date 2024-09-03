@@ -1,0 +1,22 @@
+\documentclass[12pt,ngerman]{article}
+
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage[a0paper,left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+
+\begin{document}
+\phantom{a}
+
+\AddToShipoutPicture*{\put(200,2400){
+\fbox{\includegraphics[width=0.5\textwidth]{Präsentationen_LaTeX.pdf}}
+}}
+
+\AddToShipoutPicture*{\put(400,1000){
+\fbox{\includegraphics[width=0.5\textwidth,page=2]{Präsentationen_LaTeX.pdf}}
+}}
+
+\end{document}
+
+\AddToShipoutPicture*{\put(200,200){\rotatebox{45}{\scalebox{3}{Examiners copy}}}}

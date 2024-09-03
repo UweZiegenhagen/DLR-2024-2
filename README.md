@@ -113,6 +113,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
   * Floats richtig fließen lassen
   * Typografie
+  * tikzpost Schriftart setzen
   * Bilder nachträglich beschriften
   * komplexe Tabellen, Multirow und Multicolumn
   * Glossare
