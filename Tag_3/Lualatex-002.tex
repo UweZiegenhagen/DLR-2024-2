@@ -1,0 +1,20 @@
+%!TEX TS-program = Arara
+% arara: lualatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+\usepackage{blindtext}
+
+% erfordert lualatex
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setsansfont[ItalicFont={Cambria Italic},BoldFont={Cambria Bold},BoldItalicFont={Cambria Bold Italic}]{Cambria}
+\setmainfont[ItalicFont={Calibri Italic},BoldFont={Calibri Bold},BoldItalicFont={Calibri Bold Italic}]{Calibri}
+\setmonofont[ItalicFont={Consolas Italic},BoldFont={Consolas Bold},BoldItalicFont={Consolas Bold Italic}]{Consolas}
+\setmathfont{Cambria Math}
+
+\begin{document}
+
+\blindmathpaper
+
+\end{document}

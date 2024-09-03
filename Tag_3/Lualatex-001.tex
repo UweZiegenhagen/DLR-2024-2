@@ -1,0 +1,17 @@
+%!TEX TS-program = Arara
+% arara: lualatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+\usepackage{blindtext}
+
+% erfordert lualatex
+\usepackage{fontspec}
+\setmainfont{Dancing Script}
+
+\begin{document}
+
+% Oftmals keine Mathe-Font Unterstützung
+\blindmathpaper
+
+\end{document}
