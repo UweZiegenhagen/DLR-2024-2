@@ -2,43 +2,32 @@
 
 \usepackage{babel}
 \usepackage{tikz}
+\usetikzlibrary{shapes}
+% https://tikz.dev/tikz-arrows
+\usetikzlibrary {arrows.meta} 
+
 \usepackage{blindtext}
 
 \begin{document}
 
 \blindtext
 
-\begin{tikzpicture} % https://tex.stackexchange.com/questions/665641/labelling-the-points-in-the-grid
-\draw [step=1cm,blue,thin] (0,0) grid (15,10);
-
-        \foreach \i in {0,1,...,15}{
-                \node[blue,below] at (\i,0) (\i) {\i};
-            }
-        \foreach \j in {0,1,...,10}{
-                \node[blue,left] at (0,\j) (\j) {\j};
-            }
-        
-
-\draw (0,0) -- (1,1);
-\draw[ultra thick] (3,2) -- (4,5) -- (6,3);
-\draw[red,ultra thick,loosely dotted] (8,1) -- (10,7) -- (12,4) -- cycle;
-\end{tikzpicture}
-
-\blindtext
-
-
-\begin{tikzpicture} % Achtung:_ kann leicht zum Haareraufen führen!
-\draw [step=1cm,blue,thin] (0,0) grid (15,10);
-\draw(1,1) -- ++(5,3) -- ++(-1,-1) ; % relative Koordinaten mit ++ mit Koordinatenupdate!
-\draw[red,thick](1,2) -- +(5,3) -- +(-1,-1) ; % relative Koordinaten mit ++ ohne  Koordinatenupdate!
-\end{tikzpicture}
-
-\blindtext
-
 
 \begin{tikzpicture} 
 \draw [step=1cm,blue,thin] (0,0) grid (15,10);
-\draw[red,very thick] (5,5) -- ++(60:2)  -- ++(-60:2)  ;
+\draw[red,very thick] (5,5) -- ++(60:2)  -- ++(-60:2);
+
+\node[rectangle,draw] (a) at (1,1){a};
+\node[circle,draw,blue,dotted] (b) at (3,4){b};
+
+\draw [->,red,thick] (a) -- (b);
+
+\node[draw=red,regular polygon, regular polygon sides=3] (c) at (12,6){d};
+
+\draw [|<->|] (1.5,.6) -- node[above=1mm] {5mm} (2,.6);
+
+\node[cloud, draw, fill=gray!20, aspect=2] at (8,6) {ABC};
+
 \end{tikzpicture}
 
 \blindtext
