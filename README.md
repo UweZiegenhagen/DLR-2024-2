@@ -94,9 +94,9 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * moderncv komplettes Beispiel
   * Farbige Boxen mit tcolorbox
   * show Labels im Rand, mehr zu Labels und Referenzen
+  * Mehr zu KOMA-Script: lebende Kolumnentitel
   * biblatex Namen abkürzen: firstinits=true beim Laden von biblatex
     https://tex.stackexchange.com/questions/21974/biblatex-abbreviated-author-names
-  * Mehr zu KOMA-Script: lebende Kolumnentitel
   * Schriftarten in pdflatex, Fonts mit Mathe-Support
   * Lualatex
   * Seiten rotieren lassen
