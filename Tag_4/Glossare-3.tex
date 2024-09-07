@@ -1,0 +1,38 @@
+% arara: pdflatex
+% arara: makeglossaries
+% arara: pdflatex
+\documentclass[ngerman]{article}
+
+\usepackage{babel}
+\usepackage{blindtext}
+
+\usepackage[acronym]{glossaries}
+\makeglossaries
+
+\newacronym{gcd}{GCD}{Greatest Common Divisor}
+
+\newglossaryentry{sample}{name={sample},
+description={an example}}
+
+\begin{document}
+
+\blindtext
+
+\gls{gcd}
+
+
+\blindtext
+
+\gls{gcd}
+
+
+
+
+\gls{sample}
+
+
+
+\printglossaries
+
+\end{document}
+

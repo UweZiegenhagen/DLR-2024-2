@@ -1,0 +1,18 @@
+
+\documentclass[ngerman]{article}
+
+\usepackage{babel}
+
+\usepackage[sort=none]{glossaries-extra}
+\newglossaryentry{potato}{name={potato},plural={potatoes},
+description={starchy tuber}}
+\newglossaryentry{cabbage}{name={cabbage},
+description={vegetable with thick green or purple leaves}}
+\newglossaryentry{turnip}{name={turnip},
+description={round pale root vegetable}}
+\newglossaryentry{carrot}{name={carrot},
+description={orange root}}
+\begin{document}
+Chop the \gls{cabbage}, \glspl{potato} and \glspl{carrot}.
+\printunsrtglossaries % list all entries
+\end{document}

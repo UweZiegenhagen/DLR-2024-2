@@ -22,3 +22,11 @@
 *.pytxmcr
 *.pytxpyg
 *.pkl
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
