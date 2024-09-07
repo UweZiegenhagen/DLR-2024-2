@@ -1,0 +1,20 @@
+%https://tikz-dev.translate.goog/library-external?_x_tr_sl=en&_x_tr_tl=de&_x_tr_hl=de&_x_tr_pto=sc
+\documentclass{article}
+% main document, called main.tex
+\usepackage{tikz}
+
+\usetikzlibrary{external}
+\tikzexternalize % activate!
+
+\begin{document}
+\begin{tikzpicture}
+ \node {root}
+ child {node {left}}
+ child {node {right}
+ child {node {child}}
+ child {node {child}}
+ };
+\end{tikzpicture}
+
+A simple image is \tikz \fill (0,0) circle(5pt);.
+\end{document}

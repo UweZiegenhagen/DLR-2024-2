@@ -30,3 +30,6 @@
 *.gls
 *.glsdefs
 *.ist
+*.dpth
+*.md5
+*.auxlock
