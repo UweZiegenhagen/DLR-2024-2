@@ -114,12 +114,15 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 	- Wer zuviel Zeit hat: https://www.amazon.de/Detailtypografie-Nachschlagewerk-alle-Fragen-Schrift/dp/3874396428/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1TAVVOQQTI7QI&dib=eyJ2IjoiMSJ9.K0H0dQUvAw-QDaE_MHwRVnLoqm8IWrf6S1yXcIy-nrOTMinkHOkylkhXurDOskf4h0vhSXpVfa5DmFNVTacTDckpA1Cz2UnrabYXEuyMdZBKrFdV38jDQmLaKtNjErCJk5fuOQzvuy2oxJPBWVAaqTk2SPBl31xQ-rWd47auSgUmausI35qb-CnV57UrmvBgW-p5n1BAJ6e17X80ocpCYDiNM8_02g5fUgn1bJuK9kw.Jvz65Hezlwot4NW5n81fNOr7tHU1Fy9HIHBwuGA7AEo&dib_tag=se&keywords=mikrotypografie&qid=1725736926&sprefix=mikrotypografie%2Caps%2C93&sr=8-2 
 	- Gut und günstig: https://www.amazon.de/Erste-Hilfe-Typografie-Peter-Willberg/dp/3874394743/ref=sr_1_1?crid=3QLOSW2GTA5NP&dib=eyJ2IjoiMSJ9.e4IrY9MB6BIzEpgKGG9C0MuwHTLpp395_XKzZEcO_gNoni4EwkiIJhI2Bv2EzzOa1iwXRkii_NRvJBJwDzhoekmNaxjY3SlucVW0QHG9a2pdg2M52p6QZUnZByi-wTz8jjpeJfnn8jUJoks_j7AlPxkEm3KSjSJcRbTc2dDQnQD-R8BHnjbF6tJfvVBBCYQHAhn57HVQ_oMNaej7rhQWJ3HJ-adCgheSP0rSXGy081U.V7OsHpbtc4ZnQGecVCv4WmRbw0Icj9JfUpBpSFXbFbQ&dib_tag=se&keywords=erste+hilfe+typografie&qid=1725737009&sprefix=erste+hilfe+typ%2Caps%2C93&sr=8-1
   * Formatierung von Gleichungen, amsmath, mathtools
+  * varsfromjobname Beispiel
+
   * Floats richtig fließen lassen
+
   * tikzpost Schriftart setzen
   * Bilder nachträglich beschriften
-  * komplexe Tabellen, Multirow und Multicolumn
+  * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
   * Glossare
-  * setspace
+  * setspace in KOMA
   * longtable Ersatz
   * csquotes: \enquote{}
   * jupynotex 
@@ -128,7 +131,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Beamer anpassen
   * TikZ Animationen, mehr TikZ
   * nicematrix
-  * varsfromjobname
+
   * Was sonst noch so geht mit LaTeX: Leaflets, Labels, Pocketmods, ...
   * Fragestunde
 

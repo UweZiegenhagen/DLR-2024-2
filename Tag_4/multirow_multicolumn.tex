@@ -1,0 +1,103 @@
+ \documentclass[12pt,ngerman,parskip=half]{scrartcl}
+ 
+\usepackage{multirow}
+\usepackage{tabularray}
+\usepackage{nicematrix}
+%\usepackage{booktabs}
+\UseTblrLibrary{booktabs} 
+
+\begin{document}
+ 
+\section{Normale Tabelle}
+ 
+ 
+ \begin{tabular}{|c|c|c|c|c|c|} \hline  
+ a	&	b	&	c	&	d	&	e	&	f	\\ \hline
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	q	&	r	\\ \hline
+s	&	t	&	u	&	v	&	w	&	x	\\ \hline
+\end{tabular}
+
+\section{Multicolumn}
+ 
+ \begin{tabular}{|c|c|c|c|c|c|} \toprule
+ \multicolumn{2}{|c|}{a}   &	c	&	d	&	e	&	f	\\ \midrule[2pt]
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	q	&	r	\\ \hline
+s	&	t	&	u	&	v	&	w	&	x	\\ \bottomrule
+\end{tabular}\vspace*{1em}
+ 
+\section{Multirow}
+
+In die obere *-Zelle kommt der \texttt{\textbackslash multirow} Befehl, die untere *-Zelle wird geleert.
+ 
+\begin{tabular}{|c|c|c|c|c|c|} \toprule
+a   &  b   &	c	&	d	&	e	&	f	\\ \midrule
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	*	&	r	\\ \hline
+s	&	t	&	u	&	v	&	*	&	x	\\ \bottomrule
+\end{tabular}
+ 
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+a  &   b   &	c	&	d	&	e	&	f	\\ \hline
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	\multirow[c]{2}{*}{q} 	&	r \\  \cline{1-4} \cline{6-6}
+s	&	t	&	u	&	v	&		&	x	\\ \hline
+\end{tabular}
+
+\section{tabularray}
+
+Umsetzung mittels tabularray-Paket.
+
+\begin{tblr}{
+  colspec={|c|c|c|c|c|c|},
+  %hline{1,2,3,4,5},
+  cell{1}{1} = {c=2}{c}, % multicolumn
+  cell{3}{5} = {r=2}{m}, % multirow
+} \toprule[2pt]
+ a	&	b	&	c	&	d	&	e	&	f	\\ \midrule
+g	&	h	&	i	&	j	&	k	&	l	\\ 
+m	&	n	&	o	&	p	&	q	&	r	\\ \cmidrule{1-4} \cmidrule{6-6}  
+s	&	t	&	u	&	v	&	w	&	x	\\ \bottomrule
+\end{tblr}
+
+
+\section{nicetabular aus dem nicematrix Paket}
+
+Braucht mehrere (!) Duchläufe, nutzt intern TikZ!
+
+Ohne Anpassung:
+
+ \begin{NiceTabular}{|c|c|c|c|c|c|} \hline  
+ a	&	b	&	c	&	d	&	e	&	f	\\ \hline
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	q	&	r	\\ \hline
+s	&	t	&	u	&	v	&	w	&	x	\\ \hline
+\end{NiceTabular}
+
+Nutzung von \texttt{\textbackslash Block}:
+
+ \begin{NiceTabular}{|c|c|c|c|c|c|} \hline  
+ a	&	b	&	c	&	d	&	e	&	f	\\ \hline
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	\Block{2-1}{q}	&	r	\\  \cline{1-4} \cline{6}
+s	&	t	&	u	&	v	&		&	x	\\ \hline
+\end{NiceTabular}
+
+ \begin{NiceTabular}{|c|c|c|c|c|c|} \hline  
+ a	&	b	&	c	&	d	&	e	&	f	\\ \hline
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	\Block[fill=red,opacity=0.5]{2-1}{q}	&	r	\\ 
+s	&	t	&	u	&	v	&		&	x	\\ \hline
+\end{NiceTabular}
+
+ \begin{NiceTabular}{|c|c|c|c|c|c|} \hline  
+\Block[fill=red,opacity=0.5]{1-2}{a} & &	c	&	d	&	e	&	f	\\ \hline
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	\Block[fill=red,opacity=0.5]{2-1}{q}	&	r	\\ 
+s	&	t	&	u	&	v	&		&	x	\\ \hline
+\end{NiceTabular}
+
+
+ \end{document}
+ 
