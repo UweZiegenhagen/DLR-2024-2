@@ -1,11 +1,17 @@
 \documentclass[a4paper,twoside,ngerman,12pt,headsepline,footsepline,plainfootsepline,numbers=noendperiod]{scrbook}
 
+% Uwe: Halte ich für unnötig, eventuell sogar für kontraproduktiv
 \usepackage{luatex85,shellesc}	%Kompatibilität für Lualatex als PDF generator und Shell escape Anwendung
+% Uwe: Gut
 \usepackage{lmodern}	%Veränderung der Schriftart auf latin modern (sieht im pdf besser aus)
+% Uwe: Die Option ist hier überflüssig, wird ja schon als Klassenoption geladen
 \usepackage[ngerman]{babel}		%Multilingualsupport
+% Uwe: Gut, stellt den \enquote{} Befehl für Gänsefüßchen bereit
 \usepackage{csquotes}
+% Uwe: Gut
 \usepackage{scrlayer-scrpage}	%Package für Style Header
 \usepackage{subcaption}		%Subcaption für Bilder
+% Uwe: Kann man machen, caption ist wohl kompatibel zu den KOMA Klassen: https://komascript.de/node/1845
 \usepackage[format=hang,singlelinecheck=on,labelsep=colon,labelformat=simple,figurename=Abb.,tablename=Tab.]{caption}	% Formatierung der Unterschrift für Bilder, Tabellen
 
 
@@ -17,6 +23,7 @@
 
 %\usepackage[style=numeric-comp]{biblatex}
 %\usepackage[backend=biber,style=alphabetic]{biblatex} % BibLaTeX Paket einbinden.
+% Uwe: gut
 \usepackage[
 	backend=biber,
 	style=numeric,
@@ -41,12 +48,17 @@
 % === Ende Literaturverzeichnis === %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+% Uwe: gut
 \usepackage{pdfpages}	%Einbinden von PDF Seiten
+% Uwe: gut, Erweiterung und Bugfixing von amsmath
 \usepackage{mathtools}	%mathematische Symbole
-\usepackage{amsmath, amsthm, amssymb}	%Erweiterungen für matehmatische Symbole
+% Uwe:  besser vor mathtools laden
+\usepackage{amsmath, amsthm, amssymb}	%Erweiterungen für mathematische Symbole
+% Uwe: gut
 \usepackage{tikz}	%Bereitstellung Figuren und Zeichnen
+% Uwe: gut, aber nur laden wenn man die Bibliotheken wirklich nutzt
 \usetikzlibrary{plotmarks,shapes,arrows.meta,decorations.pathmorphing,patterns,arrows}
+% Uwe: gut, aber nur laden wenn man pgfplots nutzt
 \usepackage{pgfplots}	%Bereitstellung PLots
 \pgfplotsset{
 	/pgf/number format/.cd,
@@ -55,6 +67,7 @@
 }
 
 % === Tabellen ===
+% Uwe: gut
 \usepackage{multirow}	%Bearbeitung von Tabellen
 \usepackage{pgfplotstable} %für Datentabellen
 \usepackage{longtable}		%Für lange Tabellen
@@ -64,6 +77,7 @@
 \usepackage[titletoc]{appendix}
 %Erstellung für Formel und Abkürzungsverzeichnis
 %\usepackage[automake,nomain,nonumberlist,acronym,xindy={language=german,codepage=duden-utf8},toc]{glossaries}
+% Uwe: gut, wenn man ein Glossar nutzt
 \usepackage[style=alttree,nonumberlist,section=subsection,nopostdot,nogroupskip,acronym]{glossaries}
 \newglossary{sym_list_latin}{gls1}{glo1}{lateinische Symbole}
 \newglossary{sym_list_greek}{gls2}{glo2}{griechische Symbole}
@@ -71,6 +85,7 @@
 \renewcommand{\glsglossarymark}[1]{}	%Einzelne Glossaries erzeugen keine Marke mehr, die im Header auftaucht. Stattdessen steht überall dann der Teil aus \chapter. In dem Fall dann "Nomenklatur"
 
 %Paket für Zeilenabstand
+% Uwe: sollte kompatibel sein zu KOMA, geht eventuell besser https://tex.stackexchange.com/questions/689634/vertical-spacing-in-koma
 \usepackage{setspace}
 \onehalfspacing
 
@@ -81,6 +96,7 @@
 %------------Externalize
 
 %------------Header
+% Uwe: gut
 \automark[chapter]{chapter}
 \clearpairofpagestyles	%Ist das Neue für das veraltete: \clearscrheadfoot.
 \ofoot[\pagemark]{\pagemark}
@@ -89,6 +105,9 @@
 %------------Header
 
 %Einstellung für Text 2,5cm oben, 2cm unten, 3 cm links, 3 cm rechts, Kopf- und Fußzeile jeweils 1,25cm vom Seitenrand
+% Uwe: Halte ich für problematisch, du nutzt ja schon scrpage
+% Uwe: Besser mit geometry oder den KOMA Konstrukten (typearea)
+% Das sind hier TeX Konstrukte, würde ich definitiv nicht nutzen!
 \hoffset 		= -10mm			%Abstand links 1inch + 0.46cm = 30mm
 \voffset 		= -10.5mm		%Abstand oben 1inch-12.9mm = 12.5mm; Messung hat ergeben, dass der Header bei 10 mm ist statt bei 12.5mm
 \oddsidemargin 	= 20mm			%abstand vom rand (1inch+diesen wert); wird nicht benötigt da durch hoffset geklärt

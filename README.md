@@ -106,19 +106,23 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * HID Remapper: https://github.com/jfedor2/hid-remapper :-)
   * Python-LaTeX-Schnittstellen
   * Poster mit LaTeX gestalten
-  * Formatierung von Gleichungen, amsmath
   * Svens Präambel
 
 ### Tag 4
 
+  * Formatierung von Gleichungen, amsmath
   * Floats richtig fließen lassen
   * Typografie
   * tikzpost Schriftart setzen
   * Bilder nachträglich beschriften
   * komplexe Tabellen, Multirow und Multicolumn
   * Glossare
+  * setspace
+  * longtable Ersatz
+  * csquotes
   * jupynotex 
-  * Kompilierzeiten verringern  
+  * typearea
+  * Kompilierzeiten verringern, tikzexternalize  
   * Beamer anpassen
   * TikZ Animationen, mehr TikZ
   * nicematrix
