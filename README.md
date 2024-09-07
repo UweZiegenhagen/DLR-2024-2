@@ -121,7 +121,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Glossare
   * setspace
   * longtable Ersatz
-  * csquotes
+  * csquotes: \enquote{}
   * jupynotex 
   * typearea
   * Kompilierzeiten verringern, tikzexternalize  
