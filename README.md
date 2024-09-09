@@ -114,14 +114,14 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
   * Glossare und Akronyme
   * csquotes: \enquote{}
-  * Kompilierzeiten verringern, tikzexternalize      
-  
+  * Kompilierzeiten verringern, tikzexternalize
+  * jupynotex   
   
   * setspace in KOMA
   * Floats richtig fließen lassen
   * tikzpost Schriftart setzen
   * longtable Ersatz mit tabularray
-  * jupynotex 
+
   * typearea
 
   * Beamer anpassen
