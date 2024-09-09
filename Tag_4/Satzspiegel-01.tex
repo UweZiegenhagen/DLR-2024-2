@@ -1,0 +1,113 @@
+%!TEX TS-program = pdflatex
+\documentclass[ngerman,parskip=full,twoside,DIV=10,headinclude,footinclude ]{scrreprt}
+
+%\usepackage{showframe}
+%\usepackage[]{geometry}
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage{microtype}
+\usepackage{bookman}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+%\usepackage[grid, gridunit=mm, texcoord, gridcolor=blue, subgridcolor=gray!50]{eso-pic}
+
+%\gridSetup
+% [mm]  % gridunit name
+% {1mm} % gridunit
+%  {1}   % gridlabel factor
+% {10}  % grid delta
+%  {40}  % grid Delta
+%  {1}   % gap
+
+%\makeatletter
+%\AtBeginDocument{%
+%  % code from eso-pic, executed during load, but needed to properly
+%  % setting up the grid
+%  \ifESO@texcoord
+%    \def\ESO@yoffsetI{\z@}\def\ESO@yoffsetII{-\paperheight}%
+%    \edef\ESO@griddeltaY{-\ESO@griddelta}\edef\ESO@gridDeltaY{-\ESO@gridDelta}%
+%  \else
+%    \def\ESO@yoffsetI{-\paperheight}\def\ESO@yoffsetII{\z@}%
+%    \edef\ESO@griddeltaY{\ESO@griddelta}\edef\ESO@gridDeltaY{\ESO@gridDelta}%
+%  \fi
+%}
+%\makeatother
+%
+%\gridSetup
+%  [mm]  % gridunit name
+%  {1mm} % gridunit
+%  {1}   % gridlabel factor
+%  {10}  % grid delta
+%  {10}  % grid Delta
+%  {1}   % gap
+
+
+\makeatletter
+%https://tex.stackexchange.com/questions/239490/how-can-i-print-a-length-in-centimeters
+\def\convertto#1#2{\strip@pt\dimexpr #2*65536/\number\dimexpr 1#1}
+\makeatother
+
+\usepackage[headsepline=0.5pt,footsepline=0.5pt]{scrlayer-scrpage}
+\KOMAoptions{headwidth=1\textwidth,footwidth=1\textwidth}
+\pagestyle{scrheadings}
+
+\clearscrheadings 
+\ohead[a]{b}
+\ofoot[c]{d}
+
+\ihead[e]{f}
+\ifoot[g]{h}
+
+\chead[i]{j}
+\cfoot[k]{l}
+
+ 
+%\headmark, \pagemark
+ 
+\ifoot{ifoot} % inner foot
+\ihead{ihead} % inner head
+\cfoot{cfoot} % center foot
+\chead{chead} % center head
+
+\usepackage{background}
+\def\Step{1cm}
+\tikzset{dotted lines/.style={red, black}}
+\backgroundsetup{
+scale=1,
+angle=0,
+position={current page.north west},
+contents={
+\begin{tikzpicture}[remember picture,overlay]
+\draw[dotted lines, xstep=21/10,ystep=29.7/10,help lines,red]
+  (current page.south west) grid  (current page.north east);
+ \end{tikzpicture}
+}
+}
+\begin{document}
+\chapter{Einleitung}
+\section{Historischer Überblick}
+
+\hspace*{1.5cm}Textbreite \convertto{cm}{\the\textwidth} cm, Texthöhe \convertto{cm}{\the\textheight} cm
+
+Hallo Welt, hier kommt eine Fußnote \footnote{Hallo Welt, ich bin eine Fußnote.}
+
+\blindtext[20]
+
+\blindtext[20]
+
+\blindtext[20]
+
+
+\section{Literatur}
+
+\blindtext[20]
+
+\blindtext[20]
+
+\blindtext[20]
+
+
+\end{document}
+
+%\draw[lightgray] ($(current page.north west)+ (0,-\i)$) -- ($(current page.north east)+(0,-\i)$);
