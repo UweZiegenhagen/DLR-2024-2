@@ -1,0 +1,54 @@
+\documentclass[fontsize=10pt]{scrartcl}
+\usepackage[a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[]{graphicx}
+\renewcommand{\familydefault}{\sfdefault}
+\RequirePackage[scaled=0.9]{helvet}
+\usepackage{tikz}
+\usepackage[right]{showlabels}
+\usetikzlibrary{positioning}
+\pagestyle{empty}
+ 
+\usepackage{xcolor}
+
+\begin{document}  
+
+\begin{tikzpicture}
+[xshift=4cm,yshift=4cm,   punkt/.style={circle, minimum size = 3cm,black,draw,},
+]
+\node [punkt] at (0,0){\scalebox{6}{1}};
+\node [punkt] at (3.5,0){\scalebox{6}{2}};
+\node [punkt] at (7,0){\scalebox{6}{3}};
+\node [punkt] at (10.5,0){\scalebox{6}{4}};
+\node [punkt] at (14,0){\scalebox{6}{5}};
+
+\node [punkt] at (0,-3.5){\scalebox{6}{6}};
+\node [punkt] at (3.5,-3.5){\scalebox{6}{7}};
+\node [punkt] at (7,-3.5){\scalebox{6}{8}};
+\node [punkt] at (10.5,-3.5){\scalebox{6}{9}};
+\node [punkt] at (14,-3.5){\scalebox{6}{10}};
+
+\node [punkt] at (0,-7){\scalebox{6}{11}};
+\node [punkt] at (3.5,-7){\scalebox{6}{12}};
+\node [punkt] at (7,-7){\scalebox{6}{13}};
+\node [punkt] at (10.5,-7){\scalebox{6}{14}};
+\node [punkt] at (14,-7){\scalebox{6}{15}};
+
+\node [punkt] at (0,-15){\scalebox{6}{16}};
+\node [punkt] at (3.5,-15){\scalebox{6}{17}};
+\node [punkt] at (7,-15){\scalebox{6}{18}};
+\node [punkt] at (10.5,-15){\scalebox{6}{19}};
+\node [punkt] at (14,-15){\scalebox{6}{20}};
+
+\node [punkt] at (0,-19){\scalebox{6}{21}};
+\node [punkt] at (3.5,-19){\scalebox{6}{22}};
+\node [punkt] at (7,-19){\scalebox{6}{23}};
+\node [punkt] at (10.5,-19){\scalebox{6}{24}};
+\node [punkt] at (14,-19){\scalebox{6}{25}};
+\end{tikzpicture}
+
+
+
+\end{document}
