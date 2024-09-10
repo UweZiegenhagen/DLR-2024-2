@@ -117,13 +117,12 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Kompilierzeiten verringern, tikzexternalize
   * jupynotex   
   * Beamer anpassen
-  * Titelseiten in KOMA (siehe Tag 3)
+  * Titelseiten in KOMA (siehe Tag 3 Ordner)
+  * longtable und longtable Ersatz mit tabularray/xltabular
 
 
-  
-  * setspace in KOMA
+  * setspace in KOMA via setspaceenhanced 
   * tikzpost Schriftart setzen
-  * longtable Ersatz mit tabularray
   * typearea
 
   * Floats richtig fließen lassen

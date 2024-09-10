@@ -1,10 +1,10 @@
 %!TEX TS-program = pdflatex
-\documentclass[ngerman,parskip=full,twoside,DIV=10,headinclude,footinclude ]{scrreprt}
+\documentclass[ngerman,parskip=full,BCOR=1cm,twoside,DIV=15,headinclude,footinclude ]{scrreprt}
 
 %\usepackage{showframe}
 %\usepackage[]{geometry}
 \usepackage{babel}
-\usepackage{blindtext}
+\usepackage[math]{blindtext}
 \usepackage{microtype}
 \usepackage{bookman}
 \usepackage{tikz}
@@ -79,7 +79,7 @@ angle=0,
 position={current page.north west},
 contents={
 \begin{tikzpicture}[remember picture,overlay]
-\draw[dotted lines, xstep=21/10,ystep=29.7/10,help lines,red]
+\draw[dotted lines, xstep=21/15,ystep=29.7/15,help lines,red]
   (current page.south west) grid  (current page.north east);
  \end{tikzpicture}
 }
@@ -92,7 +92,7 @@ contents={
 
 Hallo Welt, hier kommt eine Fußnote \footnote{Hallo Welt, ich bin eine Fußnote.}
 
-\blindtext[20]
+\blinddocument
 
 \blindtext[20]
 
