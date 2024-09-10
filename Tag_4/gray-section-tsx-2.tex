@@ -1,0 +1,124 @@
+\documentclass[oneside,openright,BCOR=5mm,paper=a4,fontsize=11pt]{scrbook}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[automark]{scrlayer-scrpage}
+\usepackage{xcolor}
+
+\usepackage{geometry}
+\geometry{a4paper, top=35mm, left=30mm, right=60mm, bottom=25mm, headsep=15mm, footskip=12mm}
+
+\usepackage[demo]{graphicx}
+\usepackage{textpos}
+\usepackage{blindtext}
+\usepackage{lipsum}
+\usepackage[explicit]{titlesec}
+
+\usepackage{mparhack}
+
+\setlength{\marginparwidth}{3.2cm}
+\setlength{\marginparsep}{0.7cm}
+\setheadwidth[0pt]{textwithmarginpar}
+\setfootwidth[0pt]{head}
+
+\newlength\widestnum
+\setlength\widestnum{3em}
+
+\titleformat{\chapter}[hang]
+  {\normalfont\bfseries\sffamily}
+  {}
+  {0em}
+  {%
+    \makebox[\linewidth]{%
+      \colorbox{gray!20}{%
+        \parbox{\textwidth}{%
+          \parbox[t]{\widestnum}{\thechapter}%
+          \parbox[t]{\dimexpr\textwidth-\widestnum\relax}{\strut#1\strut}%
+        }%
+      }%
+    }%
+  }
+\titleformat{\section}[hang]
+  {\normalfont\bfseries\sffamily}
+  {}
+  {0em}
+  {%
+    \makebox[\linewidth]{%
+      \fbox{%
+        \parbox{\textwidth}{%
+          \parbox[t]{\widestnum}{\thesection}%
+          \parbox[t]{\dimexpr\textwidth-\widestnum\relax}{\strut#1\strut}%
+        }%
+      }%
+    }%
+  }
+\titleformat{\subsection}[hang]
+  {\normalfont\bfseries\sffamily}
+  {}
+  {0em}
+  {%
+    \makebox[\linewidth]{%
+      \fbox{%
+        \parbox{\textwidth}{%
+          \parbox[t]{\widestnum}{\thesubsection}%
+          \parbox[t]{\dimexpr\textwidth-\widestnum\relax}{\strut#1\strut}%
+        }%
+      }%
+    }%
+  }
+\titleformat{name=\chapter,numberless}[hang]
+  {\normalfont\bfseries\sffamily}
+  {}
+  {0em}
+  {%
+    \makebox[\linewidth]{%
+      \colorbox{gray!20}{%
+        \parbox{\textwidth}{\strut#1\strut}%
+      }%
+    }%
+  }
+\titleformat{name=\section,numberless}[hang]
+  {\normalfont\bfseries\sffamily}
+  {}
+  {0em}
+  {%
+    \makebox[\linewidth]{%
+      \fbox{%
+        \parbox{\textwidth}{\strut#1\strut}%
+      }%
+    }%
+  }
+\titleformat{name=\subsection,numberless}[hang]
+  {\normalfont\bfseries\sffamily}
+  {}
+  {0em}
+  {%
+    \makebox[\linewidth]{%
+      \fbox{%
+        \parbox{\textwidth}{\strut#1\strut}%
+      }%
+    }%
+  }
+
+\titlespacing*{\chapter}
+  {0pt}{20pt}{12pt}
+
+\begin{document}
+
+\tableofcontents
+
+\chapter{Test unnumbered chapter}
+Text
+\section*{Test unnumbered section}
+Text
+\subsection*{Test unnumbered subsection}
+Text
+
+\chapter{Test numbered chapter}
+Text
+\section{Test numbered section}
+Text
+\subsection{Test numbered subsection}
+Text
+
+\end{document}
