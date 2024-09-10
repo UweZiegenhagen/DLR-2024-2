@@ -115,19 +115,19 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Glossare und Akronyme
   * csquotes: \enquote{}
   * Kompilierzeiten verringern, tikzexternalize
-  * jupynotex   
+  * jupynotex (geht bei mir nicht)
   * Beamer anpassen
   * Titelseiten in KOMA (siehe Tag 3 Ordner)
   * longtable und longtable Ersatz mit tabularray/xltabular
-
-
-  * setspace in KOMA via setspaceenhanced 
-  * tikzpost Schriftart setzen
-  * typearea
-
-  * Floats richtig fließen lassen
   * TikZ Animationen, mehr TikZ
+
+  * typearea
+  * setspace in KOMA via setspaceenhanced 
   * Was sonst noch so geht mit LaTeX: Leaflets, Labels, Pocketmods, ...
+
+
+  * tikzpost Schriftart setzen
+  * Floats richtig fließen lassen
   * Fragestunde
 
 ## Literaturempfehlungen
