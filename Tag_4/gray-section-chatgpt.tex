@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{lipsum} % For dummy text
+
+% Define a new command for section titles with a gray background
+\makeatletter
+\renewcommand{\section}{
+    \@startsection {section}{1}{\z@}
+    {3.5ex plus 1ex minus .2ex}
+    {2.3ex plus .2ex}
+    {\normalfont\Large\bfseries\tikz[baseline=(n.base)]{
+        \node[fill=gray!20,anchor=base west,text height=1.5ex,text depth=.25ex,outer sep=0.5mm, text=black,rounded corners=2pt] (n) {\thesection\quad};
+    }%
+    \tikz[baseline=(n.base)]{
+        \node[fill=gray!20,anchor=base west,text height=1.5ex,text depth=.25ex,outer sep=0.5mm, text=black,rounded corners=2pt] (n) {\@startsectionname};
+    }}%
+}
+\makeatother
+
+\title{Document with TikZ Section Backgrounds}
+\author{Author Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\lipsum[1] % Dummy text
+
+\section{Related Work}
+\lipsum[2] % Dummy text
+
+\section{Conclusion}
+\lipsum[3] % Dummy text
+
+\end{document}

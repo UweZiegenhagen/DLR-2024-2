@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{fit}
+
+\newcommand{\graysection}[1]{%
+  \section{#1}
+  \begin{tikzpicture}[overlay,remember picture]
+    \node[fill=gray!20,inner sep=0pt,outer sep=0pt,fit=(section-#1.north west) (section-#1.south east)] {};
+  \end{tikzpicture}
+}
+
+\begin{document}
+
+\graysection{Introduction}
+This is the first section.
+
+\graysection{Methods}
+This is the second section.
+
+\graysection{Results}
+This is the third section.
+
+\graysection{Discussion}
+This is the fourth section.
+
+\end{document}

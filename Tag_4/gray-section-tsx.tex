@@ -1,0 +1,61 @@
+% https://tex.stackexchange.com/questions/179019/frame-box-around-chapter-section-headings
+\documentclass{scrbook}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[automark]{scrlayer-scrpage}
+\usepackage{xcolor}
+
+\usepackage{geometry}
+\geometry{a4paper, top=35mm, left=30mm, right=60mm, bottom=25mm, headsep=15mm, footskip=12mm}
+
+\makeatletter
+\newcommand\makeSecHead[4][\fbox]{%
+  \@namedef{#2}{\@ifnextchar*{\@nameuse{#2@i}}{\@nameuse{#2@ii}}}
+%
+    \expandafter\def\csname#2@i\endcsname*##1{\par\vspace{#4}\noindent
+       #1{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+         \normalfont\normalsize#3\makebox[40pt][l]{}~##1}}\par\vspace{#4}}%
+%
+    \expandafter\def\csname#2@ii\endcsname{\@ifnextchar[{\@nameuse{#2@iii}}{\@nameuse{#2@iv}}}%
+%
+    \expandafter\def\csname#2@iii\endcsname[##1]##2{\par\vspace{#4}\noindent
+      #1{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+        \refstepcounter{#2}\normalfont\normalsize#3\makebox[40pt][l]{\@nameuse{the#2}}~##2}}%
+        \addcontentsline{toc}{#2}{\@nameuse{the#2}~##1}\par\vspace{#4}}%
+%
+   \expandafter\def\csname#2@iv\endcsname##1{\par\vspace{#4}\noindent
+     #1{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+       \refstepcounter{#2}\normalfont\normalsize#3\makebox[40pt][l]{\@nameuse{the#2}}~##1}}%
+       \addcontentsline{toc}{#2}{\@nameuse{the#2}~##1}\par\vspace{#4}}%
+}
+\makeatother    
+
+\makeSecHead[\colorbox{gray!30}]{chapter}{\Huge\bfseries}{20pt}
+\makeSecHead{section}{\LARGE\bfseries}{15pt}
+\makeSecHead{subsection}{\Large\bfseries}{12pt}
+\makeSecHead{subsubsection}{\large\bfseries}{10pt}
+
+\begin{document}
+\tableofcontents
+
+\bigskip
+\chapter*{Test unnumbered chapter}
+Text
+\section*{Test unnumbered section}
+Text
+\subsection*{Test unnumbered subsection}
+Text
+
+\chapter{Test numbered chapter}
+Text
+\section{Test numbered section}
+Text
+\section*{Test unnumbered section}
+Text
+\subsection{Test numbered subsection}
+Text
+\subsection*{Test unnumbered subsection}
+Text
+
+\end{document}

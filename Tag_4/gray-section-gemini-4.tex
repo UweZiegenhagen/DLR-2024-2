@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tikz}
+
+\makeatletter
+\renewcommand{\section}{%
+  \@startsection{section}{1}{\z@}{-3.25ex\@plus -1ex \@minus -.2ex}{2.3ex\@plus 1ex \@minus .2ex}%
+  {\normalfont\Large\bfseries\centering\sectionbox}}%
+\newcommand{\sectionbox}[1]{%
+  \tikz[overlay,remember picture,baseline={(current bounding box.south)}]
+  \node[fill=gray!20,inner sep=0pt,outer sep=0pt,minimum width=\textwidth]
+    at (current page.west) {\phantom{#1}};}
+\makeatother
+
+\begin{document}
+
+\section{Section Title 1}
+This is the content of section 1.
+
+\section{Section Title 2}
+This is the content of section 2.
+
+\end{document}

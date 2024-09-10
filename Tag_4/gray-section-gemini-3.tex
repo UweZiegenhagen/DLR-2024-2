@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{tikz}
+
+\newcommand{\sectionbox}[1]{%
+  \tikz[overlay,remember picture,baseline={(current bounding box.south)}]
+  \node[fill=gray!20,inner sep=0pt,outer sep=0pt,minimum width=\textwidth,yshift=-1em]
+    at (current page.west) {\phantom{#1}};}
+
+\newcommand{\subsectionbox}[1]{%
+  \tikz[overlay,remember picture,baseline={(current bounding box.south)}]
+  \node[fill=red!20,inner sep=0pt,outer sep=0pt,minimum width=\textwidth,yshift=-1em]
+    at (current page.west) {\phantom{#1}};}
+
+\begin{document}
+
+%\section{Section Title 1}
+\sectionbox{Section Title 1}
+This is the content of section 1.
+
+
+\end{document}
+
+
+\subsection{Subsection Title 1.1}
+\subsectionbox{Subsection Title 1.1}
+This is the content of subsection 1.1.
+
+\subsection{Subsection Title 1.2}
+\subsectionbox{Subsection Title 1.2}
+This is the content of subsection 1.2.
+
+\section{Section Title 2}
+\sectionbox{Section Title 2}
+This is the content of section 2.
