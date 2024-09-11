@@ -134,7 +134,8 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Zeilenumbruch in Nodes
   * DTK Artikel an Gruppe
   * Box um Gruppe von Nodes konstruieren
-  
+  * 3D Zeichnungen mit TikZ
+  * Fußnotensymbole statt Zahlen
 
 ## Literaturempfehlungen
 
