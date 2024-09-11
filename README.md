@@ -118,10 +118,10 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Kompilierzeiten verringern, tikzexternalize (TikZ-ext.tex)
   * Beamer anpassen (https://www.uweziegenhagen.de/?p=2877)
   * Formatierung von Gleichungen, amsmath, mathtools
-
   * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
   * longtable und longtable Ersatz mit tabularray/xltabular
-  * Glossare und Akronyme
+
+  * Glossare und Akronyme (Glossare-3.tex)
   * typearea und DIV in KOMA
   * setspace in KOMA via setspaceenhanced 
   * Was sonst noch so geht mit LaTeX: Leaflets, Labels, Pocketmods, ...
@@ -132,6 +132,8 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Beamer fortlaufende Linie 
   * Beispiel für scope
   * Zeilenumbruch in Nodes
+  * DTK Artikel an Gruppe
+  * Box um Gruppe von Nodes konstruieren
   
 
 ## Literaturempfehlungen
