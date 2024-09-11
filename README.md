@@ -120,12 +120,10 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Titelseiten in KOMA (siehe Tag 3 Ordner)
   * longtable und longtable Ersatz mit tabularray/xltabular
   * TikZ Animationen, mehr TikZ
-
+  * Formelsammlung
   * typearea
   * setspace in KOMA via setspaceenhanced 
   * Was sonst noch so geht mit LaTeX: Leaflets, Labels, Pocketmods, ...
-
-
   * tikzpost Schriftart setzen
   * Floats richtig fließen lassen
   * Fragestunde
