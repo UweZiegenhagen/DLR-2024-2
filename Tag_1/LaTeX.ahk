@@ -1,3 +1,4 @@
+#Requires AutoHotkey v1.1.33+
 :*:dlr#::Deutsches Zentrum für Luft- und Raumfahrt
 
 
