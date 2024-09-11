@@ -110,14 +110,16 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
     - Nett zu lesen: https://www.amazon.de/Just-My-Type-About-Fonts/dp/1846683025
   * Formatierung von Gleichungen, amsmath, mathtools
   * varsfromjobname Beispiel
+  * Titelseiten in KOMA (siehe Tag 3 Ordner)
+  * csquotes: \enquote{}
+
+
   * Bilder nachträglich beschriften
   * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
   * Glossare und Akronyme
-  * csquotes: \enquote{}
   * Kompilierzeiten verringern, tikzexternalize
   * jupynotex (geht bei mir nicht)
   * Beamer anpassen
-  * Titelseiten in KOMA (siehe Tag 3 Ordner)
   * longtable und longtable Ersatz mit tabularray/xltabular
   * TikZ Animationen, mehr TikZ
   * Formelsammlung
