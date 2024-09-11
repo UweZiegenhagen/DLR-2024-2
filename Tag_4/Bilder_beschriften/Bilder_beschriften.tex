@@ -5,6 +5,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[left=5mm,top=5mm,right=5mm,bottom=5mm]{geometry}
 \usepackage{tikz}
+\usepackage{pgfplots}
 \renewcommand{\familydefault}{\sfdefault}
 \pagestyle{empty}
 
@@ -19,6 +20,10 @@
 
 \node[rotate=-15] (ro) at (15,11.5) {\bfseries\Large\textcolor{yellow}{Ohr}};
 \node[rotate=-15] (lo) at (11,13) {\bfseries\Large\textcolor{yellow}{Ohr}};
+
+    \begin{axis}[domain=0:30,legend pos=outer north east]
+    \addplot {13*sin(deg(x))}; 
+    \end{axis}
  
   
 \end{tikzpicture}
