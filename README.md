@@ -116,8 +116,8 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Formelsammlung
   * TikZ Animationen, mehr TikZ
   * Kompilierzeiten verringern, tikzexternalize (TikZ-ext.tex)
-
   * Beamer anpassen (https://www.uweziegenhagen.de/?p=2877)
+
   * Formatierung von Gleichungen, amsmath, mathtools
   * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
   * longtable und longtable Ersatz mit tabularray/xltabular
@@ -126,6 +126,11 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * setspace in KOMA via setspaceenhanced 
   * Was sonst noch so geht mit LaTeX: Leaflets, Labels, Pocketmods, ...
   * Fragestunde
+  
+## Nachliefern
+
+  * Beamer fortlaufende Linie 
+  
 
 ## Literaturempfehlungen
 
