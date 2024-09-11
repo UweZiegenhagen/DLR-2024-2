@@ -1,0 +1,554 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{nccmath}
+\usepackage{fourier}
+%\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm,landscape]{geometry} % Updated 
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry} % Updated margins for improved readability
+\usepackage{siunitx}
+\usepackage{fancyhdr}
+\usepackage{chemformula}
+\usepackage{booktabs}
+
+%\sisetup{locale=EN}
+\sisetup{per-mode = symbol-or-fraction}
+\sisetup{separate-uncertainty=true}
+\DeclareSIUnit\year{a}
+\DeclareSIUnit\clight{c}
+\def\gray#1{\textcolor{gray}{#1}}
+\newcolumntype{A}{ >{$} r <{$} @{} >{${}} l <{$} }
+\def\linebreak{\newline \newline}
+\def\largelinebreak{\newline \newline \newline}
+\newcommand{\myquad}[1][1]{\hspace*{#1em}\ignorespaces}
+
+\usepackage{titlesec}
+\titleformat{\subsubsection}[block]{\large\bfseries\filcenter}{}{1em}{}
+
+\newcommand{\deen}[2]{#1 / \textcolor{red}{#2}}
+
+%\AtBeginDocument{\RenewCommandCopy\qty\SI} 
+
+\begin{document}
+\pagestyle{fancy}
+\lhead{Formelsammlung Solartechnik \\ \gray{Formulary Solar Technology}}
+\rhead{Wintersemester 24/25 \\ \gray{Winter term 24/25}}
+
+\title{\Large{Formelsammlung Solartechnik / \gray{Formulary Solar Technology}}}
+\author{Wintersemester 24/25 / \gray{Winter term 24/25}}
+\date{}
+\maketitle
+%
+%\begin{center}
+\subsubsection*{\deen{Grundlagen solarer Strahlung}{Fundamentals of Solar Radiation}}
+%\end{center}
+%
+\vspace{0.15cm}
+Winkelbeziehungen / \gray{Angular relationships}
+\begin{fleqn}
+\begin{equation}
+\begin{split}
+\text{\-\ Deklination / \gray{Declination}} \myquad[5.5] \delta = 0.39795 \cdot \cos(0.98563 \cdot (N - 173))
+\end{split}
+\end{equation}
+\end{fleqn}
+\begin{fleqn}
+\begin{equation}
+\begin{split}
+\text{\-\ Höhenwinkel / \gray{Altitude angle}} \myquad[2] \sin \gamma = \cos \delta \cdot \cos \Omega_s \cdot \cos \varphi + \sin \delta \cdot \sin \varphi
+\end{split}
+\end{equation}
+\end{fleqn}
+\-\ Azimuthwinkel / \gray{Azimuth angle} \\
+\begin{equation}
+    \sin \alpha_s = 
+\begin{cases}
+    180^\circ - \frac{\cos \delta \cdot \sin \Omega_s}{\cos \gamma},& \text{wenn / \gray{if} } \cos \Omega_s < \frac{\tan \delta}{\tan \varphi} \\
+    \frac{\cos \delta \cdot \sin \Omega_s}{\cos \gamma},& \text{sonst / \gray{otherwise}}
+\end{cases}
+\end{equation}
+\begin{tabular}{ll}
+mit / \gray{with} & \\
+& \\
+Stundenwinkel / \gray{Hour angle} & $\Omega_s$ \\
+Breitengrad / \gray{Latitude} & $\varphi$ \\
+Fortlaufende Nummerierung der Tage / \gray{Day of year} & $N$ \\
+\end{tabular}
+\largelinebreak
+%
+Plancksches Strahlungsgesetz / \gray{Planck's radiation law}
+\\
+%\begin{equation}
+%    B(\lambda, T) = \frac{2hc^2}{\lambda^5} \frac{1}{e^{\frac{hc}{\lambda k_B T}} - 1} 
+%\end{equation}
+%
+\begin{equation}
+    E_{\lambda, S}(\lambda, T) = \frac{2\pi hc^2}{\lambda^5 (e^{\frac{hc}{\lambda k_B T}} - 1)}
+\end{equation}
+\\
+%
+Wiensches Verschiebungsgesetz / \gray{Wien's displacement law}
+\\
+\begin{equation}
+    \lambda_{\text{max}} T = \SI{2897.8}{\micro\meter\kelvin}
+\end{equation}
+\\
+%
+\colorbox{yellow}{Stefan-Boltzmann-Gesetz / \gray{Stefan-Boltzmann law}}
+\\
+\begin{equation}
+    E = \sigma AT^4 
+\end{equation}
+\\
+% \colorbox{yellow}{Intensität und Fluss / \gray{Intensity and flux}}
+% \begin{equation}
+%     I \propto \frac{1}{r^2}
+% \end{equation}
+% \begin{equation}
+%     I(\theta) = I_0 \cos(\theta)
+% \end{equation}
+% \colorbox{yellow}{Absorption und Extinktion / \gray{Absorption and extinction}}
+% \begin{equation}
+%     I = I_0 e^{-\alpha x}
+% \end{equation}
+Transmissionsgesetz / \gray{Transmission law}
+\begin{equation}
+    I = I_0 \cdot e^{-\epsilon \cdot s} = I_0 \cdot \tau_G \myquad[3] \text{mit / \gray{with}} \quad \tau_G = \tau_{RS} \cdot \tau_{MS} \cdot \tau_{A}
+\end{equation}
+\\
+Snellius Gesetz / \gray{Snellius' law}
+\begin{equation}
+    \frac{\sin \alpha}{\sin \beta} = \frac{n_2}{n_1} = \frac{c_1}{c_2}
+\end{equation}
+Strahlungsintensität / \gray{Radiant intensity}
+%\begin{equation}
+%    L = \lim_{\Delta \omega \to 0 \newline \Delta A \to 0}\frac{\Delta E}{\Delta A \cdot \Delta \omega}
+%\end{equation}
+\begin{equation}
+    L = \frac{d^2 E}{dA_{\text{proj}} \, d\Omega} = \frac{d^2 E}{\cos \theta \, dA \, d\Omega}
+\end{equation} \\
+\begin{fleqn}
+\begin{equation*}
+\begin{split}
+\text{\indent mit / \gray{with}} \myquad[5] d\Omega = \sin \theta \, d\theta \, d\varphi \quad \text{(Raumwinkel / \gray{Solid angle})}
+\end{split}
+\end{equation*}
+\end{fleqn}
+\\
+Strahlungsfluss / \gray{Radiant flux}
+%\begin{equation}
+%    \Phi = \int L \cos(\theta) d\Omega = \int_{0}^{2\pi} \int_{0}^{\pi} I \cos\Theta \sin\Theta d\Theta d\phi
+%\end{equation}
+\begin{equation}
+    q = \int_{0}^{2\pi} \int_{0}^{\pi} L \cos\theta \sin\theta \, d\theta \, d\varphi
+\end{equation}
+Etendue / \gray{Etendue}
+\begin{equation}
+    U := \iint N^2 \cos \theta \, dA \, d\Omega
+\end{equation}
+%
+\newline
+\begin{center}
+\subsubsection*{Konzentration solarer Strahlung / \gray{Concentration of Solar Radiation}}
+\end{center}
+%
+\vspace{0.15cm}
+Brennfleck Paraboloid / \gray{Focal Spot of Paraboloid}
+\begin{equation}
+    r_{1,B} = r_{t,\alpha D} = \frac{d_{B}}{2} \cdot \alpha_{D}
+\end{equation}
+\begin{equation}
+    r_{2,B} = \frac{r_t \cdot \alpha_D}{\cos(\phi)}
+\end{equation}
+\begin{equation}
+    A = \pi r_t^2 \sin(\phi)^2
+\end{equation}
+\begin{equation}
+    A' = \pi r_t^2 \frac{\sin(\Theta)^2}{\cos(\phi)^2}
+\end{equation}
+% \begin{equation}
+%     C_{\text{max}} = 11550
+% \end{equation}
+Brennrechteck Parabolrinne / \gray{Focal rectangle of parabolic trough}
+\begin{equation}
+    r_{B} = \frac{r_t \cdot \alpha_D}{\cos(\phi)} - \frac{d_{B}}{2}
+\end{equation}
+\begin{equation}
+    A = 2 \cdot l \cdot r_t \sin(\phi)
+\end{equation}
+\begin{equation}
+    A' = l \cdot r_t \frac{\sin(\Theta)}{\cos(\phi)}
+\end{equation}
+% \begin{equation}
+%     C_{\text{max}} = 107.5
+% \end{equation}
+Maximale Temperatur / \gray{Maximum temperature}
+%\begin{equation}
+%    T_A^4 = T_S^4 \cdot R_S^4 \cdot A_R \cdot C \cdot \sin(\Theta)^2 = T_S^4 \cdot C_{S-E} \cdot A_R
+%\end{equation}
+\begin{equation}
+    T_\text{abs, max} = \sqrt[4]{\frac{I_0}{\sigma}C} = T_S \sqrt[4]{\frac{C}{C_\textbf{max}}}
+\end{equation}
+% \colorbox{yellow}{Fokusabweichung / \gray{Focus deviation}}
+% \begin{equation}
+%     FD = 2 \cdot \sigma_{\text{mirror}} \cdot f_{\text{mittl. Fokallaenge}}
+% \end{equation}
+%
+\\
+%\begin{center}
+\subsubsection*{Thermische Kollektoren / \gray{Thermal Collectors}}
+%\end{center}
+%
+\vspace{0.15cm}
+% \colorbox{green}{Grundlagen des Wärmetransfers / \gray{Fundamentals of heat transfer}}\\
+% %
+% \begin{fleqn}
+% \begin{equation}
+% \begin{split}
+% \text{\-\ Konvektion / \gray{Convection}} \myquad[7] \dot{q}_{\text{conv}} = \alpha \cdot \Delta T = \alpha \cdot (T_{S,2} - T_{\infty})
+% \end{split}
+% \end{equation}
+% \end{fleqn}
+% %
+% \begin{fleqn}
+% \begin{equation}
+% \begin{split}
+% \text{\-\ Wärmeleitung / \gray{Conduction}} \myquad[5.5] \dot{q}_{\text{cond}} = -\lambda \frac{\Delta T}{L} = -\lambda \frac{T_{S,2} - T_{S,1}}{L}
+% \end{split}
+% \end{equation}
+% \end{fleqn}
+% %
+% \begin{fleqn}
+% \begin{equation}
+% \begin{split}
+% \text{\-\ Wärmestrahlung / \gray{Radiation}} \myquad[5.5] \dot{q}_{\text{rad}} = \epsilon \cdot \sigma \cdot (T_{S,2}^4 - T_U^4)
+% \end{split}
+% \end{equation}
+% \end{fleqn}
+% %
+% \linebreak
+%
+Parabolrinnenkollektoren / \gray{Parabolic Trough Collectors}
+%
+\linebreak
+% \-\ \colorbox{green}{Thermischer Wirkungsgrad / \gray{Thermal efficiency}}
+% \begin{equation}
+%     \eta_{\text{th}} = \frac{\dot{Q}_{\text{abs}}}{\dot{Q}_{\text{solar}}}
+% \end{equation}
+% \begin{equation}
+%     \dot{Q}_{\text{abs}} = \dot{m} \cdot (h_{\text{out}} - h_{\text{in}})
+% \end{equation}
+% \begin{equation}
+%     \dot{Q}_{\text{solar}} = DNI \cdot A \cdot \cos(\theta)
+% \end{equation}
+%
+\-\ Optischer Wirkungsgrad / \gray{Optical efficiency}
+\begin{equation}
+    \eta_{\text{opt}} = \rho_{\text{refl}} \cdot \tau_{\text{rec}} \cdot \alpha_{\text{rec}} \cdot IC
+\end{equation}
+%
+\-\ Wirkungsgradgleichung / \gray{Efficiency equation}
+\begin{equation}
+    \eta_{\text{coll}} = \eta_{\text{opt}} \cdot \kappa(\theta) - c_1 \cdot T_m^* - c_2 \cdot G_b \cdot T_m^{*2}
+\end{equation}
+%
+\begin{fleqn}
+\begin{equation*}
+\begin{split}
+\text{\indent mit / \gray{with}} \myquad[5.5] T_m^* = \frac{T_{\text{fluid}} - T_U}{G_b} \quad \text{and} \quad G_b = DNI \cdot \cos\theta
+\end{split}
+\end{equation*}
+\end{fleqn}
+%
+% Uncomment if needed
+%\textbf{Wärmeverluste im Absorber / Heat Losses in the Absorber}
+%\begin{enumerate}
+%      \item \text{Strahlungsverluste / Radiation Losses}
+%      \begin{equation}
+%        \dot{Q}_{\text{rad}} = \sigma \cdot \epsilon_{\text{Gl}} \cdot (T_{\text{Gl}}^4 - T_{\text{U}}^4) \cdot A_{\text{Gl}}
+%      \end{equation}
+%      \item \text{Konvektive Verluste / Convective Losses}
+%      \begin{equation}
+%        \dot{Q}_{\text{conv}} = \alpha_{\text{conv}} \cdot (T_{\text{Gl}} - T_{\text{U}}) \cdot A_{\text{Gl}}
+%      \end{equation}
+%      \item \text{Leitungsverluste / Conduction Losses}
+%      \begin{equation}
+%        \dot{Q}_{\text{cond}} = \lambda_{\text{cond}} \cdot (T_{\text{Abs}} - T_{\text{Gl}}) \cdot A_{\text{Abs}}
+%      \end{equation}
+%\end{enumerate}
+\-\ Einfallswinkel-Modifikator  / \gray{Incidence Angle Modifier (IAM)}
+\begin{equation}
+    \kappa(\theta) = b_0 + b_1 \cdot \theta + b_2 \cdot \theta^2 
+\end{equation}
+\-\ Kollektorausrichtung / \gray{Collector orientation}
+%
+\begin{fleqn}
+\begin{equation}
+\begin{split}
+\text{\indent N-S Ausrichtung / \gray{N-S orientation}} \myquad[5.5] \cos \theta = \sqrt{1 - \cos^2\gamma \cdot \cos^2\alpha_s} 
+\end{split}
+\end{equation}
+\end{fleqn}
+%
+\begin{fleqn}
+\begin{equation}
+\begin{split}
+\text{\indent O-W Ausrichtung / \gray{E-W orientation}} \myquad[4.5] \cos\theta = \sqrt{1 - \cos^2\gamma \cdot \sin^2\alpha_s} 
+\end{split}
+\end{equation}
+\end{fleqn}
+%
+\linebreak
+Turmkraftwerk / \gray{Solar tower power plant}
+\linebreak
+%
+\-\ Realer Wirkungsgrad / \gray{Real efficiency}
+\begin{equation}
+    \eta_{\text{th}} = \frac{\dot{Q}}{A_{\text{Ap}} \cdot C \cdot DNI \cdot \eta_{\text{hel}}}
+\end{equation}
+%\-\ Heliostatenwirkungsgrad / \gray{Heliostat efficiency}
+%\begin{equation}
+%    \eta_{\text{hel}} = \frac{E'_{\text{real}}}{E'} = \frac{F'_{\text{real}}}{C \cdot E}
+%\end{equation}
+\-\ Receiver Bilanz / \gray{Receiver balance}
+\begin{equation}
+    \dot{Q} = A_{\text{ap}} \left[ \alpha \cdot C \cdot DNI \cdot \eta_{\text{hel}} - \epsilon \cdot \sigma T_{\text{abs}}^4 - U_L \cdot (T_{\text{abs}} - T_{\text{amb}}) \right] = A_{\text{abs}} \cdot U_I \cdot (T_{\text{abs}} - T_{\text{fluid}})
+\end{equation}
+\newline
+%
+%\begin{center}
+\subsubsection*{Kraftwerksschaltungen / \gray{Power Plant Circuits}}
+%\end{center}
+%
+\vspace{0.15cm}
+Thermische Kreisprozesse / \gray{Thermal cycles} \\
+\\
+% \-\ \colorbox{green}{Carnot-Wirkungsgrad / \gray{Carnot efficiency}}
+% \begin{equation}
+%     \eta_{\text{Carnot}} = 1 - \frac{T_C}{T_H}
+% \end{equation}
+\-\ Ideal thermischer Wirkungsgrad Brayton / \gray{Ideal Brayton cycle efficiency}
+%\begin{equation}
+%    \eta = \frac{h_2 - h_1 + h_4 - h_3}{h_2 - h_1} = 1 - \frac{T_1}{T_2} = 1 - \left(\frac{p_2}{p_1}\right)^{\frac{1-\kappa}{\kappa}}
+%\end{equation}
+\begin{equation}
+    \eta_{th} = 1 - \frac{T_1}{T_2} = 1 - \left(\frac{p_2}{p_1}\right)^{\frac{\kappa - 1}{\kappa}} \quad \text{mit / \gray{with}} \quad \kappa = \frac{c_p}{c_v}
+\end{equation}
+\-\ Isentrope Zustandsänderung / \gray{Isentropic process}
+%\begin{equation}
+%    \frac{T_{2,s}}{T_1} = \left(\frac{p_2}{p_1}\right)^{\frac{\kappa - 1}{\kappa}} \quad \text{mit / \gray{with}} \quad \kappa = \frac{c_p}{c_v}
+%\end{equation}
+\begin{equation}
+    \eta_{s,V} = \frac{h_{2,s} - h_1}{h_2 - h_1} \quad \text{und / \gray{and}} \quad \eta_{s,T} = \frac{h_3 - h_4}{h_{3} - h_{4,s}}
+\end{equation}
+\linebreak
+%
+\begin{center}
+\subsubsection*{Photovoltaik / \gray{Photovoltaics}}
+\end{center}
+%
+\vspace{0.15cm}
+PV Zellen / \gray{PV cells} \\
+\\
+\-\ \colorbox{yellow}{Planck-Einstein Relation / \gray{Planck-Einstein relation}}
+\begin{equation}
+    E_{\lambda} = \frac{h c}{\lambda}
+\end{equation}
+%with 
+%\begin{equation}
+%    c = 2.998 \times 10^8 \, \text{m/s}
+%\end{equation}
+%\begin{equation}
+%    h = 6.626 \times 10^{-34} \, \text{Js}
+%\end{equation}
+%\begin{equation}
+%    1 \, \text{eV} = 1.602 \times 10^{-19} \, \text{J}
+%\end{equation}
+%\[
+%\begin{array}{/c/c/}
+%\hline
+%\text{Material} & E_G \text{ in eV} \\
+%\hline
+%\text{Ge} & 0.7 \\
+%\text{CuInSe}_2 & 1 \\
+%\text{c-Si} & 1.13 \\
+%\text{GaAs} & 1.42 \\
+%\text{CdTe} & 1.45 \\
+%\text{AlSb} & 1.55 \\
+%\text{CuGaSe}_2 & 1.7 \\
+%\text{a-Si (amorph)} & 1.7 \\
+%\text{Al}_{0.85}\text{Ga}_{0.15}\text{As} & 1.9 \\
+%\text{GaP} & 2.3 \\
+%\text{CdS} & 2.45 \\
+%\hline
+%\end{array}
+%\]
+\-\ Shockley-Gleichung / \gray{Shockley equation}
+\begin{equation}
+    I_D = I_S \left( e^{\frac{U_D}{n U_T}} - 1 \right)
+\end{equation}
+% \-\ \colorbox{yellow}{Temperaturspannung / \gray{Thermal voltage}}
+% \begin{equation}
+%     U_T = \frac{k T}{q}
+% \end{equation}
+\-\ Strom-Spannungskennlinie / \gray{Current-voltage characteristic}
+\begin{equation}
+    I = I_{\text{ph}} - I_D = c_0 E - I_S \cdot \left(e^{\frac{U_D}{n U_T}} - 1 \right)
+\end{equation}
+%\begin{equation}
+%    P = U \cdot I
+%\end{equation}
+%\begin{equation}
+%    P_{\text{MPP}} = U_{\text{MPP}} \cdot I_{\text{MPP}}
+%\end{equation}
+\begin{equation}
+    FF = \frac{P_{\text{MPP}}}{U_L \cdot I_K} < 1
+\end{equation}
+\-\ Wirkungsgrad / \gray{Efficiency}
+\begin{equation}
+    \eta = \frac{P_{\text{el}}}{P_{\text{solar}}} = \frac{P_{\text{MPP}}}{E_{\text{solar}} \cdot A_{\text{cell}}} 
+    %= \frac{FF \cdot U_L \cdot I_K}{E_{\text{solar}} \cdot A_{\text{cell}}}
+\end{equation}
+\-\ Konzentrationsabhängigkeit / \gray{Concentration dependence}
+\begin{equation}
+    U_L^C = U_L^1 + m \, U_T \, \ln(C)
+\end{equation}
+\begin{equation}
+    I_K^C = C \cdot I_K^1
+\end{equation}
+%
+\newline
+%\begin{center}
+\subsubsection*{Energiespeicher / \gray{Energy Storage}}
+%\end{center}
+%
+\vspace{0.15cm}
+\-\ Speicherkapazität / \gray{Storage capacity}
+\begin{equation}
+    Q = f_{\text{usage}} \cdot m \cdot \overline{c_p} \cdot (T_{\text{max}} - T_{\text{min}})
+\end{equation}
+%
+\begin{fleqn}
+\begin{equation*}
+\begin{split}
+\text{\indent mit / \gray{with}} \myquad[9] f_{\text{usage}} = \frac{Q_{\text{storage,real}}}{Q_{\text{storage,ideal}}}
+\end{split}
+\end{equation*}
+\end{fleqn}
+%
+\-\ Katalytische Reaktionen / \gray{Catalytic reactions}
+\begin{equation}
+    A + B + \Delta^R H^* \rightleftharpoons C + D
+\end{equation}
+\-\ Thermische Dissoziationsreaktionen / \gray{Thermal dissociation reactions}
+\begin{equation}
+    \text{AB}_{(s/l)} + \Delta^R H^* \rightleftharpoons \text{A}_{(s/l)} + \text{B}_{(g)}
+\end{equation}
+\newline
+%
+\begin{center}
+\subsubsection*{Solare Wasserstofferzeugung - \gray{Solar hydrogen production}}
+\end{center}
+%
+\vspace{0.15cm}
+\-\ Allgemeine Reaktionsgleichung / \gray{General reaction equation}
+\begin{equation}
+    \text{C}_n\text{H}_m\text{O}_x + o\text{H}_2\text{O} \rightleftharpoons (n - (o + x))\text{C} + (o + x)\text{CO} + \left(\frac{m}{2} + o\right)\text{H}_2
+\end{equation}
+\-\ Ideale Gasgleichung / \gray{Ideal gas law}
+\begin{equation}
+    pV = nRT \quad 
+\end{equation}
+%
+\newpage
+%
+\begin{center}
+\subsubsection*{Konstanten / \gray{Constants}}
+\end{center}
+%
+\vspace{0.15cm}
+\-\ Lichtgeschwindigkeit im Vakuum / \gray{Speed of light in vacuum}
+    \begin{equation}
+        c_0 = \SI{2.998e8}{\metre\per\second}
+    \end{equation}
+%
+\-\ Planck-Konstante / \gray{Planck's constant}
+    \begin{equation}
+        h = \SI{6.626e-34}{\joule\second}
+    \end{equation}
+%
+\-\ Elementarladung eines Elektrons / \gray{Electronvolt}
+    \begin{equation}
+        \SI{1}{\electronvolt} = \SI{1.602e-19}{\joule}
+    \end{equation}
+%
+\-\ Ideale Gaskonstante / \gray{Ideal gas constant}
+    \begin{equation}
+        R = \SI{8.314}{\joule\per\mole\per\kelvin}
+    \end{equation}
+%
+\-\ Boltzmann-Konstante / \gray{Boltzmann's constant}
+    \begin{equation}
+        k_B = \SI{1.381e-23}{\joule\per\kelvin}
+    \end{equation}
+%
+\-\ {Stefan-Boltzmann-Konstante / \gray{Stefan-Boltzmann constant}
+    \begin{equation}
+        \sigma = \SI{5.67e-8}{\watt\per\metre\squared\per\kelvin\tothe{4}}
+    \end{equation}
+%
+\linebreak
+%\begin{center}
+\subsubsection*{Bandlücken / \gray{Band Gaps}}
+%\end{center}
+%
+\vspace{0.15cm}
+
+
+\begin{table}[h!]
+\begin{center}
+\caption{Bandlücken}\label{tab:meine}
+\begin{tabular}{lc} \toprule
+{Material} & {$E_G$ \textbf{[\si{\electronvolt}]}} \\ \midrule
+\ch{Ge} & 0.70 \\
+\ch{CuInSe2} & 1.00 \\
+\ch{c-Si} & 1.13 \\
+\ch{GaAs} & 1.42 \\
+\ch{CdTe} & 1.45 \\
+\ch{AlSb} & 1.55 \\
+\ch{CuGaSe2} & 1.70 \\
+\ch{a-Si_{(amorph)}} & 1.70 \\
+\ch{Al0.85Ga0.15As} & 1.90 \\
+\ch{GaP} & 2.30 \\
+\ch{CdS} & 2.45 \\ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+%\begin{table}[h!]
+%    \centering
+%    \begin{tabular}{/c/c/}
+%        \hline
+%        \textbf{Material} & $E_G$ \textbf{[\si{\electronvolt}]} \\
+%        \hline
+%        \ch{Ge} & 0.70 \\
+%        \ch{CuInSe2} & 1.00 \\
+%        \ch{c-Si} & 1.13 \\
+%        \ch{GaAs} & 1.42 \\
+%        \ch{CdTe} & 1.45 \\
+%        \ch{AlSb} & 1.55 \\
+%        \ch{CuGaSe2} & 1.70 \\
+%        \ch{a-Si_{(amorph)}} & 1.70 \\
+%        \ch{Al0.85Ga0.15As} & 1.90 \\
+%        \ch{GaP} & 2.30 \\
+%        \ch{CdS} & 2.45 \\
+%        \hline
+%    \end{tabular}
+%\end{table}
+
+
+
+\end{document}
