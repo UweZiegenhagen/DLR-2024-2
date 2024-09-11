@@ -123,7 +123,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 
   * Glossare und Akronyme (Glossare-3.tex)
   * typearea und DIV in KOMA
-  * setspace in KOMA via setspaceenhanced 
+  * setspace in KOMA via setspaceenhanced: setspace ==> 1,5-fachen Zeilenabstand
   * Was sonst noch so geht mit LaTeX: Leaflets, Labels, Pocketmods, ...
   * Fragestunde
   

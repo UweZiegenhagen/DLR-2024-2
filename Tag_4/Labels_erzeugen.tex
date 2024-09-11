@@ -1,4 +1,6 @@
 %!TEX TS-program = lualatex
+% Zweimal übersetzen,
+% gibt beim ersten Mal eine Fehlermeldung, da tdf Datei noch nicht geschrieben wurde
 \documentclass[a4paper,12pt]{scrartcl}
 \usepackage[total={210mm,297mm},top=0mm,left=0mm,bottom=0mm,includefoot]{geometry}
 \usepackage[schmal]{ticket}
@@ -50,7 +52,7 @@
 \mylabel{#1}{#2}
 }
 
-\newcommand\faktor{6}
+\newcommand\faktor{5}
 
 \begin{document}
 \mylabel{\faktor}{Physik}
