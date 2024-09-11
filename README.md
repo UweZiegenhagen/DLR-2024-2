@@ -118,13 +118,12 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * TikZ Animationen, mehr TikZ
   * Kompilierzeiten verringern, tikzexternalize (TikZ-ext.tex)
 
+  * Beamer anpassen
   * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
+  * longtable und longtable Ersatz mit tabularray/xltabular
   * Glossare und Akronyme
 
-  * Beamer anpassen
-  * longtable und longtable Ersatz mit tabularray/xltabular
-
-  * typearea
+  * typearea und DIV in KOMA
   * setspace in KOMA via setspaceenhanced 
   * Was sonst noch so geht mit LaTeX: Leaflets, Labels, Pocketmods, ...
   * tikzpost Schriftart setzen
