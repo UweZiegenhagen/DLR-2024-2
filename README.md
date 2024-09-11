@@ -114,15 +114,15 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * csquotes: \enquote{}
   * Bilder nachträglich beschriften
   * jupynotex (geht bei mir nicht)
-
+  * Formelsammlung
+  * TikZ Animationen, mehr TikZ
 
   * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
   * Glossare und Akronyme
   * Kompilierzeiten verringern, tikzexternalize
   * Beamer anpassen
   * longtable und longtable Ersatz mit tabularray/xltabular
-  * TikZ Animationen, mehr TikZ
-  * Formelsammlung
+
   * typearea
   * setspace in KOMA via setspaceenhanced 
   * Was sonst noch so geht mit LaTeX: Leaflets, Labels, Pocketmods, ...
