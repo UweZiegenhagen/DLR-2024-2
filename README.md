@@ -113,12 +113,12 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Titelseiten in KOMA (siehe Tag 3 Ordner)
   * csquotes: \enquote{}
   * Bilder nachträglich beschriften
+  * jupynotex (geht bei mir nicht)
 
 
   * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
   * Glossare und Akronyme
   * Kompilierzeiten verringern, tikzexternalize
-  * jupynotex (geht bei mir nicht)
   * Beamer anpassen
   * longtable und longtable Ersatz mit tabularray/xltabular
   * TikZ Animationen, mehr TikZ
