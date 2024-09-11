@@ -116,10 +116,11 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * jupynotex (geht bei mir nicht)
   * Formelsammlung
   * TikZ Animationen, mehr TikZ
+  * Kompilierzeiten verringern, tikzexternalize (TikZ-ext.tex)
 
   * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
   * Glossare und Akronyme
-  * Kompilierzeiten verringern, tikzexternalize
+
   * Beamer anpassen
   * longtable und longtable Ersatz mit tabularray/xltabular
 
