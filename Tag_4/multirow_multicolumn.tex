@@ -56,7 +56,7 @@ Umsetzung mittels tabularray-Paket.
   cell{3}{5} = {r=2}{m}, % multirow
 } \toprule[2pt]
  a	&	b	&	c	&	d	&	e	&	f	\\ \midrule
-g	&	h	&	i	&	j	&	k	&	l	\\ 
+g	&	h	&	i	&	j	&	k	&	l	\\ \midrule
 m	&	n	&	o	&	p	&	q	&	r	\\ \cmidrule{1-4} \cmidrule{6-6}  
 s	&	t	&	u	&	v	&	w	&	x	\\ \bottomrule
 \end{tblr}
@@ -87,7 +87,7 @@ s	&	t	&	u	&	v	&		&	x	\\ \hline
  \begin{NiceTabular}{|c|c|c|c|c|c|} \hline  
  a	&	b	&	c	&	d	&	e	&	f	\\ \hline
 g	&	h	&	i	&	j	&	k	&	l	\\ \hline
-m	&	n	&	o	&	p	&	\Block[fill=red,opacity=0.5]{2-1}{q}	&	r	\\ 
+m	&	n	&	o	&	p	&	\Block[fill=red,opacity=0.1]{2-1}{q}	&	r	\\ 
 s	&	t	&	u	&	v	&		&	x	\\ \hline
 \end{NiceTabular}
 

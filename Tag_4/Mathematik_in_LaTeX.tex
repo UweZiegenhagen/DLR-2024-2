@@ -253,7 +253,7 @@ fsdfsd
 %https://tex.stackexchange.com/questions/270543/draw-a-graph-in-latex-with-tikz
 \begin{tikzpicture}
 \begin{scope}[every node/.style={circle,thick,draw}]
-    \node (A) at (0,0) {A};
+    \node[rectangle] (A) at (0,0) {Abcdefg \\  sd};
     \node (B) at (0,3) {B};
     \node (C) at (2.5,4) {C};
     \node (D) at (2.5,1) {D};
@@ -266,7 +266,7 @@ fsdfsd
               every edge/.style={draw=red,very thick}]
     \path [->] (A) edge node {$5$} (B);
     \path [->] (B) edge node {$3$} (C);
-    \path [->] (A) edge node {$4$} (D);
+    \path [->] (A) edge node {$4$} (E);
     \path [->] (D) edge node {$3$} (C);
     \path [->] (A) edge node {$3$} (E);
     \path [->] (D) edge node {$3$} (E);

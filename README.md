@@ -117,8 +117,8 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * TikZ Animationen, mehr TikZ
   * Kompilierzeiten verringern, tikzexternalize (TikZ-ext.tex)
   * Beamer anpassen (https://www.uweziegenhagen.de/?p=2877)
-
   * Formatierung von Gleichungen, amsmath, mathtools
+
   * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
   * longtable und longtable Ersatz mit tabularray/xltabular
   * Glossare und Akronyme
@@ -130,6 +130,8 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 ## Nachliefern
 
   * Beamer fortlaufende Linie 
+  * Beispiel für scope
+  * Zeilenumbruch in Nodes
   
 
 ## Literaturempfehlungen
