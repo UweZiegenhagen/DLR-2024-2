@@ -112,9 +112,9 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * varsfromjobname Beispiel
   * Titelseiten in KOMA (siehe Tag 3 Ordner)
   * csquotes: \enquote{}
-
-
   * Bilder nachträglich beschriften
+
+
   * komplexe Tabellen, Multirow und Multicolumn, mit Standard-LaTeX, tabularray und nicematrix
   * Glossare und Akronyme
   * Kompilierzeiten verringern, tikzexternalize
