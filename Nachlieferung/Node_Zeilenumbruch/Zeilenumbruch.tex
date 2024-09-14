@@ -1,0 +1,16 @@
+\documentclass[12pt,ngerman]{scrartcl}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\begin{document}
+
+\begin{center}
+\begin{tikzpicture}
+\draw[help lines,red] (0,0) grid (16,10);
+
+\node[rectangle,draw,black,align=flush left](a) at (4,5){Hallo Welt, \\ ich bin ein Umbruch}; 
+
+\end{tikzpicture}
+\end{center}
+
+\end{document}
