@@ -130,6 +130,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
 ## Nachliefern
 
   * Beamer fortlaufende Linie 
+    ==> Beispiele im Ordner Nachlieferung 
   * Beispiel für scope
   * Zeilenumbruch in Nodes
   * DTK Artikel an Gruppe
