@@ -133,6 +133,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
     ==> Beispiele im Ordner Nachlieferung 
   * Beispiel für scope
   * Zeilenumbruch in Nodes
+    ==> Beispiele im Ordner Nachlieferung 
   * Box um Gruppe von Nodes konstruieren
     ==> Beispiele im Ordner Nachlieferung 
   * 3D Zeichnungen mit TikZ
