@@ -134,6 +134,7 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
   * Beispiel für scope
   * Zeilenumbruch in Nodes
   * Box um Gruppe von Nodes konstruieren
+    ==> Beispiele im Ordner Nachlieferung 
   * 3D Zeichnungen mit TikZ
     ==> Beispiele im Ordner Nachlieferung 
   * Fußnotensymbole statt Zahlen
