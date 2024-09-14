@@ -133,10 +133,13 @@ Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
     ==> Beispiele im Ordner Nachlieferung 
   * Beispiel für scope
   * Zeilenumbruch in Nodes
-  * DTK Artikel an Gruppe
   * Box um Gruppe von Nodes konstruieren
   * 3D Zeichnungen mit TikZ
+    ==> Beispiele im Ordner Nachlieferung 
   * Fußnotensymbole statt Zahlen
+    ==> Beispiele im Ordner Nachlieferung, nutzt authblk Paket 
+  * DTK Artikel an Gruppe
+
 
 ## Literaturempfehlungen
 
