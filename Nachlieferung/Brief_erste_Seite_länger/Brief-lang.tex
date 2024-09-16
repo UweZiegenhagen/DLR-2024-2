@@ -1,0 +1,28 @@
+\documentclass[12pt,ngerman,parskip=half,enlargefirstpage=true,firstfoot=false]{scrlttr2}
+
+\usepackage{babel}
+\usepackage{blindtext}
+
+\setkomavar{fromname}{Donald Duck}
+\setkomavar{fromaddress}{Am Geldspeicher 12a, 12345 Entenhausen}
+\setkomavar{subject}{Gehaltsnachzahlung}
+\setkomavar{myref}[IBAN]{DE5344546464646}
+\setkomavar{yourref}{1234/1545}
+\setkomavar{yourmail}[Steuernummer]{213/1231/31131}
+
+\usepackage{palatino}
+
+\begin{document}
+\begin{letter}{Dagobert Duck \\ Am Geldspeicher 1 \\ 12345 Entenhausen}
+\opening{Lieber Onkel Dagobert,}
+
+Du hast noch immer mein Gehalt vom Juni nicht bezahlt, Deine Neffen hungern!
+
+Bitte überweise an die \usekomavar*{myref} \usekomavar{myref}
+
+\blindtext[20]
+
+\closing{Mit freundlichen Grüßen,}
+
+\end{letter}
+\end{document}
